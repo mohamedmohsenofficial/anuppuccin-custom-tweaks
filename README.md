@@ -1,12 +1,41 @@
 # AnuPpuccin Premium Mod: Distraction-Free & AMOLED Dark 🎨✨
 
-![Theme Preview](D1.jpg)
-*(Replace `D1.jpg` in your repository with an actual screenshot of your vault)*
+![Main Preview](screen/D1.png)
 
 Welcome to the **AnuPpuccin Premium Mod**! 
 While the original [AnuPpuccin theme](https://github.com/AnubisNekhet/AnuPpuccin) is an absolute masterpiece, I created this modification snippet to push it toward a more highly-focused, premium, and distraction-free workflow. 
 
 My goal is simple: to create the ultimate reading and studying environment for students, kids, and researchers, helping future generations focus solely on their knowledge without visual clutter.
+
+---
+
+## 📊 Development Status & Focus
+
+**Built for personal use, shared with the world.** 
+I initially built this mod purely for my personal workflow. Because of my preferences, the development and continuous improvements are **heavily focused on the Dark Mode**. 
+
+Both modes are highly functional, but here is the exact current completion status:
+
+| Theme Mode | Completion | Status |
+| :--- | :--- | :--- |
+| ☀️ **Light Mode** | **95%** | Almost perfect, minor UI refinements remaining. |
+| 🌙 **Dark Mode** | **85%** | Highly functional, ongoing development to reach perfection. |
+
+*Note: Work is actively ongoing to hit 100% for both modes!*
+
+---
+
+## ⚠️ Compatibility & Testing Warning
+
+This theme has been rigorously tested and optimized on the following operating systems:
+*   🐧 **Fedora (Linux)**
+*   🪟 **Windows**
+*   🤖 **Android**
+
+**Untested Platforms:** macOS and iOS (iPhone/iPad). 
+Because Obsidian uses universal CSS rendering, the theme is expected to work **80% to 97% flawlessly** on Apple devices as well, but I haven't personally verified it. 
+
+*Go ahead and try it out—you have absolutely nothing to lose!*
 
 ---
 
@@ -28,12 +57,34 @@ If you love AnuPpuccin but want something cleaner, this mod is for you. Here is 
 
 | Feature | Default AnuPpuccin | This Custom Mod |
 | :--- | :--- | :--- |
-| **Dark Mode** | Dark gray / Soft dark | **True Pitch Black (`#000000`)** for OLED/AMOLED battery saving and infinite contrast. |
-| **Workspace Borders** | Visible structural lines | **Completely Borderless**. Floating elements, smooth hovers, and clean spacing. |
-| **Mobile Toolbar** | Attached to the keyboard | **Floating Glassmorphism Capsule** (iOS-style) at the bottom of the screen. |
-| **Settings UI** | Standard Obsidian lists | **Card-based Layout** with smooth iOS-style sliding toggle switches. |
-| **Code Blocks** | Boxy with visible lines | **Seamless & Rounded** with custom syntax highlight colors and no Live Preview borders. |
-| **Headings** | Standard folding arrows | **Invisible Floating Arrows** that appear instantly *only* when you hover. |
+| **Dark Mode** | Dark gray / Soft dark | **True Pitch Black (`#000000`)** for OLED/AMOLED battery saving. |
+| **Workspace Borders** | Visible structural lines | **Completely Borderless**. Floating elements and clean spacing. |
+| **Mobile Toolbar** | Attached to the keyboard | **Floating Glassmorphism Capsule** (iOS-style) at the bottom. |
+| **Settings UI** | Standard Obsidian lists | **Card-based Layout** with smooth iOS-style sliding switches. |
+| **Code Blocks** | Boxy with visible lines | **Seamless & Rounded** with custom syntax highlight colors. |
+| **Headings** | Standard folding arrows | **Invisible Floating Arrows** that appear instantly on hover. |
+
+---
+
+## 📸 Theme Gallery
+
+Take a look at how the theme completely transforms your Obsidian workspace:
+
+<div align="center">
+  <img src="screen/D2.png" width="49%">
+  <img src="screen/D3.png" width="49%">
+  <img src="screen/D4.png" width="49%">
+  <img src="screen/D5.png" width="49%">
+  <img src="screen/D6.png" width="49%">
+  <img src="screen/D7.png" width="49%">
+  <img src="screen/D8.png" width="49%">
+  <img src="screen/D9.png" width="49%">
+  <img src="screen/D10.png" width="49%">
+  <img src="screen/D11.png" width="49%">
+  <img src="screen/D12.png" width="49%">
+  <img src="screen/D13.png" width="49%">
+  <img src="screen/D14.png" width="49%">
+</div>
 
 ---
 
@@ -47,6 +98,7 @@ I have organized the modifications into modular files so you can easily understa
     *   `code-blocks-colors.css`: Dedicated styling for syntax highlighting and seamless code block rendering.
     *   `os-default-fonts.css`: Forces Obsidian to use your device's native system fonts and emojis for maximum performance and native feel.
 *   📄 `style-settings-export.json`: My personal configuration file for the Style Settings plugin.
+*   📁 `screen/`: Contains all the showcase screenshots.
 
 ---
 
@@ -55,7 +107,7 @@ I have organized the modifications into modular files so you can easily understa
 Before installing this in your personal vault, make sure you have:
 1. The **AnuPpuccin** theme installed and applied in Obsidian.
 2. The **Style Settings** plugin installed from the Obsidian Community Plugins.
-3. snippets folder
+
 ---
 
 ## 🚀 Installation Guide
@@ -75,19 +127,19 @@ To get the exact colors and layout shown in the screenshots, you need to import 
 2. Open Obsidian and go to **Settings > Appearance**.
 3. Scroll down to **CSS Snippets** and click the folder icon to open `.obsidian/snippets/`.
 4. Move the downloaded `.css` files into this folder.
-5. Refresh the list in Obsidian and toggle all them **ON**.
+5. Refresh the list in Obsidian and toggle them **ON**.
 
 **📱 On Mobile (Android & iOS):**
 1. Download the `.css` files to your device.
 2. Navigate to your vault folder: `.obsidian/snippets/`. *(Create the `snippets` folder if it doesn't exist. On iOS, you may need to use the native Files app or a third-party app to view hidden folders).*
 3. Paste the `.css` files there.
-4. Open the Obsidian app > Settings > Appearance > Toggle All the snippets **ON**.
+4. Open the Obsidian app > Settings > Appearance > Toggle the snippets **ON**.
 
 ---
 
 ## 🐛 Known Bugs
 
-I am building this project in my free time to support the learning community. To be perfectly honest, I don't have the time to reach absolute perfection on my own. 
+As mentioned, I am building this project in my free time. I don't have the time to reach absolute perfection on my own, but I am getting there. 
 
 **Here are the current known issues:**
 - [ ] **Mobile Dark Mode:** The files menu background appears transparent.
