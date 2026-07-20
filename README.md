@@ -1,74 +1,146 @@
-# AnuPpuccin Custom Tweaks (Obsidian CSS Snippet) 🎨✨
+# AnuPpuccin Premium Mod: Distraction-Free & AMOLED Dark 🎨✨
 
-Welcome! I’ve been using the amazing [AnuPpuccin](https://github.com/AnubisNekhet/AnuPpuccin) theme for Obsidian, but as a heavy user, I found myself constantly tweaking the CSS to make it fit a more highly-focused, premium, and distraction-free workflow. 
+![Theme Preview](D1.jpg)
+*(Replace `D1.jpg` in your repository with an actual screenshot of your vault)*
 
-After refining this code for a long time, I decided to compile all my modifications into a single, clean CSS snippet. This snippet doesn't replace AnuPpuccin; it sits on top of it, enhancing the UI, typography, and mobile experience without breaking the core theme.
+Welcome to the **AnuPpuccin Premium Mod**! 
+While the original [AnuPpuccin theme](https://github.com/AnubisNekhet/AnuPpuccin) is an absolute masterpiece, I created this modification snippet to push it toward a more highly-focused, premium, and distraction-free workflow. 
 
-## 🚀 Features (What's Inside?)
-
-I completely organized and rebuilt the custom CSS into 10 distinct architectural modules. Here is exactly what this snippet modifies:
-
-### 1. Light Theme Core ☀️
-- Restyled basic typography, headings (H1 to H6), and hyperlinks with specific, high-contrast hex colors (e.g., Deep Navy Blue for H1s, Crimson for H2s).
-- Added crisp bottom borders for H1s and refined inline title colors for a cleaner reading experience.
-
-### 2. Pitch Black Dark Theme 🌙
-- Completely replaced the standard dark gray backgrounds with **True Pitch Black (`#000000`)** for OLED screens and ultimate contrast.
-- Custom neon-accented heading colors (Blues, Reds, Oranges) that pop beautifully against the black workspace.
-- Redesigned active tabs, sidebars, and title bars to blend seamlessly into the pitch-black aesthetic.
-
-### 3. Typography & Markdown Upgrades 📝
-- Custom blockquotes with left-border accents matching the theme mode.
-- Sleek, custom horizontal rules (`hr`) with tailored spacing.
-- Redesigned text highlights with a nice yellow background and precise padding for both desktop and mobile.
-
-### 4. Custom Callouts & Tables 📊
-- Re-engineered Obsidian Callouts (note, tip, important, caution, warning) with custom RGB variables and refined opacity for borders and backgrounds.
-- Stripped bulky table borders and replaced them with elegant, semi-transparent borders for a minimalist data view.
-
-### 5. UI, Menus, & Settings Elegance 🎛️
-- **File Explorer:** Removed native bulky borders, added smooth hover effects, and introduced custom left-border highlights for nested folders.
-- **Settings UI:** Completely overhauled the settings menu for the Dark theme. Settings are now neat cards with rounded corners, and native inputs/dropdowns are heavily customized.
-- **Context Menus:** Added subtle borders and hover states to dropdowns and suggestion containers. Light mode menus get a classy warm tint, while Dark mode menus get a deep shadow effect.
-
-### 6. Properties & Tags (Metadata) 🏷️
-- Colored tag pills based on the active theme (Solid Blue for Light, Bright Blue for Dark).
-- Simplified "Related" properties to look like clean, underlined hyperlinks instead of bulky pills.
-- Removed ugly borders and backgrounds from native metadata input fields for a cleaner frontmatter look.
-
-### 7. Code Blocks & Syntax Highlighting 💻
-- **Live Preview Fixes:** Stripped out annoying default borders, margins, and pseudo-elements from Live Preview code blocks.
-- **Dark Mode Code:** Gave code blocks a distinct dark background (`#111111`) with rounded corners (`12px`) and subtle borders.
-- Custom syntax highlighting colors (Strings, Keywords, Functions, Comments) specifically picked to reduce eye strain.
-
-### 8. Toggles, Buttons & Canvas 🔘
-- **iOS-Style Toggles:** Replaced native Obsidian checkboxes in the settings with smooth, capsule-shaped iOS-style toggle switches (with sliding animations!).
-- Colored CTA buttons and matched Mermaid diagram paths/strokes to the primary theme colors.
-- Custom dot-pattern background and colored edges for Obsidian Canvas.
-
-### 9. Smart Heading Collapse Indicators 🔽
-- Built a custom, absolute-positioned floating arrow system for folding headings.
-- The arrows perfectly inherit the exact color of their specific heading level (H1-H6).
-- Arrows remain completely invisible to reduce clutter, instantly appearing via a smooth opacity transition *only* when you hover over the heading.
-
-### 10. Mobile & Tablet Overhaul 📱
-- **Pure Black Drawers:** Mobile sidebars and menus are now pure black in dark mode.
-- **Floating Capsule Toolbar:** The mobile formatting toolbar detaches from the keyboard and becomes a floating, glassmorphism-style capsule at the bottom of the screen (similar to iOS UI).
-- Removed unnecessary structural borders across the mobile workspace to maximize screen real estate.
-
-## 🛠️ How to Install
-
-1. Make sure you have the [AnuPpuccin theme](https://github.com/AnubisNekhet/AnuPpuccin) installed and activated in Obsidian.
-2. Download the `anuppuccin-custom-tweaks.css` file from this repository.
-3. Open your Obsidian vault folder.
-4. Navigate to `.obsidian/snippets/` (Create the `snippets` folder if it doesn't exist).
-5. Paste the downloaded `.css` file inside the `snippets` folder.
-6. Open Obsidian **Settings > Appearance**.
-7. Scroll down to **CSS Snippets** and toggle on `anuppuccin-custom-tweaks`.
-8. Enjoy! ☕
-
-## 🤝 Contributing & Modifying
-Feel free to fork this repository, tweak the hex codes to your liking, or open an issue if an Obsidian update breaks a specific class. I organized the CSS into 10 clearly commented sections so you can easily find and change what you need.
+My goal is simple: to create the ultimate reading and studying environment for students, kids, and researchers, helping future generations focus solely on their knowledge without visual clutter.
 
 ---
-*Disclaimer: This is a CSS modification snippet and is not affiliated with the official AnuPpuccin theme creators. Full credit goes to [AnubisNekhet](https://github.com/AnubisNekhet) for the amazing foundational theme!*
+
+## 🎯 Try It Instantly! (The Preview Vault)
+
+Don't want to mess with your own vault's settings just yet? No problem! 
+I have included a ready-to-use demo vault in this repository so you can test the theme immediately.
+
+1. Download or clone this repository to your device.
+2. Open Obsidian and select **Open folder as vault**.
+3. Choose the `preview` folder included in this repo.
+4. Enjoy exploring the theme, checking the colors, and testing the layouts right away!
+
+---
+
+## 🌟 What Makes This Mod Different? (Comparison)
+
+If you love AnuPpuccin but want something cleaner, this mod is for you. Here is how it compares to the default theme:
+
+| Feature | Default AnuPpuccin | This Custom Mod |
+| :--- | :--- | :--- |
+| **Dark Mode** | Dark gray / Soft dark | **True Pitch Black (`#000000`)** for OLED/AMOLED battery saving and infinite contrast. |
+| **Workspace Borders** | Visible structural lines | **Completely Borderless**. Floating elements, smooth hovers, and clean spacing. |
+| **Mobile Toolbar** | Attached to the keyboard | **Floating Glassmorphism Capsule** (iOS-style) at the bottom of the screen. |
+| **Settings UI** | Standard Obsidian lists | **Card-based Layout** with smooth iOS-style sliding toggle switches. |
+| **Code Blocks** | Boxy with visible lines | **Seamless & Rounded** with custom syntax highlight colors and no Live Preview borders. |
+| **Headings** | Standard folding arrows | **Invisible Floating Arrows** that appear instantly *only* when you hover. |
+
+---
+
+## 📦 What's Inside? (File Structure)
+
+I have organized the modifications into modular files so you can easily understand and use what you need:
+
+*   📁 `preview/`: A fully working Obsidian demo vault to test the theme safely.
+*   📁 `snippets/`:
+    *   `anuppuccin-custom-tweaks.css`: The core engine. Contains the Pitch Black UI, heading colors, border removals, custom callouts, and mobile UI upgrades.
+    *   `code-blocks-colors.css`: Dedicated styling for syntax highlighting and seamless code block rendering.
+    *   `os-default-fonts.css`: Forces Obsidian to use your device's native system fonts and emojis for maximum performance and native feel.
+*   📄 `style-settings-export.json`: My personal configuration file for the Style Settings plugin.
+
+---
+
+## 🛠️ Requirements (For your own Vault)
+
+Before installing this in your personal vault, make sure you have:
+1. The **AnuPpuccin** theme installed and applied in Obsidian.
+2. The **Style Settings** plugin installed from the Obsidian Community Plugins.
+
+---
+
+## 🚀 Installation Guide
+
+### Step 1: Import the Configuration (Crucial)
+To get the exact colors and layout shown in the screenshots, you need to import my settings:
+1. Open Obsidian and ensure the **Style Settings** plugin is enabled.
+2. Open the `style-settings-export.json` file from this repository and copy all its contents.
+3. Go to **Obsidian Settings > Style Settings**.
+4. Click the **Import** button at the top.
+5. Paste the copied text and hit **Save**.
+
+### Step 2: Install the CSS Snippets
+
+**💻 On Desktop (Windows/Mac/Linux):**
+1. Download the `.css` files from the `snippets/` folder in this repo.
+2. Open Obsidian and go to **Settings > Appearance**.
+3. Scroll down to **CSS Snippets** and click the folder icon to open `.obsidian/snippets/`.
+4. Move the downloaded `.css` files into this folder.
+5. Refresh the list in Obsidian and toggle them **ON**.
+
+**📱 On Mobile (Android & iOS):**
+1. Download the `.css` files to your device.
+2. Navigate to your vault folder: `.obsidian/snippets/`. *(Create the `snippets` folder if it doesn't exist. On iOS, you may need to use the native Files app or a third-party app to view hidden folders).*
+3. Paste the `.css` files there.
+4. Open the Obsidian app > Settings > Appearance > Toggle the snippets **ON**.
+
+---
+
+## 🐛 Known Bugs
+
+I am building this project in my free time to support the learning community. To be perfectly honest, I don't have the time to reach absolute perfection on my own. 
+
+**Here are the current known issues:**
+- [ ] **Mobile Dark Mode:** The files menu background appears transparent.
+- [ ] **Code Editor:** The Live Preview code editor styling in Dark Mode needs refinement across all versions.
+- [ ] **Mobile Tables:** The table styling in Dark Mode on mobile doesn't perfectly match the sleek desktop version.
+
+---
+
+## 🤝 Contributing
+
+This is an open-source project powered by the community. Contributions are highly welcome for:
+
+*   New CSS features and UI tweaks
+*   Better mobile and tablet workflows
+*   Documentation improvements
+*   Bug fixes (especially the ones listed above!)
+*   Performance and cross-device optimizations
+
+Feel free to open an Issue or submit a Pull Request. Let's collaborate to make this the perfect study environment for everyone!
+
+---
+
+## 📜 License
+
+This project is released under the **MIT License**.
+
+You are free to:
+*   Use
+*   Modify
+*   Distribute
+*   Fork
+
+...for both personal and commercial projects. 
+
+*(Disclaimer: This is a CSS modification snippet and is not affiliated with the official AnuPpuccin theme creators. Full credit goes to [AnubisNekhet](https://github.com/AnubisNekhet) for the amazing foundational theme!)*
+
+---
+
+## 💖 Support
+
+If you find this project useful, consider supporting its development. Every contribution helps improve features, maintain the project, and keep it accessible for everyone. 🌍✨
+
+<p align="left">
+  <a href="https://www.buymeacoffee.com/mohsenofficial" target="_blank">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" width="200">
+  </a>
+</p>
+
+---
+
+### Final Thoughts 💭
+Built for my own needs, shared for the community. If it happens to help someone else, then it has done more than I originally intended. 
+
+Built with passion, curiosity, countless hours of learning, and a deep love for open-source software. 
+
+Thank you for using this project and being part of its journey. 🤟🏼😘
