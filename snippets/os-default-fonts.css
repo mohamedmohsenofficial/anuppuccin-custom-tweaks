@@ -1,0 +1,19 @@
+/* ==================================================== */
+/* 🥳 إجبار أوبسيديان على قراءة خط الإيموجي المخصص للنظام */
+/* ==================================================== */
+
+body {
+    /* إضافة الكلمة السحرية 'emoji' عشان تسحب الخط المعدل من الـ System مباشرة */
+    --font-text-override: system-ui, emoji, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Android Emoji", sans-serif !important;
+    
+    /* إجبار البرنامج يعتمد الرصة دي في كل مكان */
+    --font-text: var(--font-text-override) !important;
+    --font-editor: var(--font-text-override) !important;
+    --font-default: var(--font-text-override) !important;
+}
+
+/* تأكيد التطبيق على المحرر ووضع القراءة */
+.markdown-rendered,
+.markdown-source-view.mod-cm6 .cm-scroller {
+    font-family: var(--font-text-override) !important;
+}

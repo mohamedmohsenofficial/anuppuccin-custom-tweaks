@@ -1,0 +1,1276 @@
+/* ===================================================================== */
+/* ☀️ 1. Light Theme Base & Text Formatting                              */
+/* ===================================================================== */
+/* Base colors and text styling for the light theme.                     */
+
+body.theme-light {
+    --h1-color: #15538C !important;
+    --link-color: #15538C !important;
+    --link-external-color: #15538C !important;
+}
+
+body.theme-light .markdown-rendered h1, body.theme-light .cm-s-obsidian .HyperMD-header-1, body.theme-light .cm-s-obsidian .HyperMD-header-1 * { color: #15538C !important; }
+body.theme-light .markdown-rendered h2, body.theme-light .cm-s-obsidian .HyperMD-header-2, body.theme-light .cm-s-obsidian .HyperMD-header-2 * { color: #900C3F !important; }
+body.theme-light .markdown-rendered h3, body.theme-light .cm-s-obsidian .HyperMD-header-3, body.theme-light .cm-s-obsidian .HyperMD-header-3 * { color: #B84300 !important; }
+body.theme-light .markdown-rendered h4, body.theme-light .cm-s-obsidian .HyperMD-header-4, body.theme-light .cm-s-obsidian .HyperMD-header-4 * { color: #1E7A32 !important; }
+body.theme-light .markdown-rendered h5, body.theme-light .cm-s-obsidian .HyperMD-header-5, body.theme-light .cm-s-obsidian .HyperMD-header-5 * { co========================================================== */
+/* 🎯 Pinning collapse arrows so they stay fixed and don't push text     */
+/* ===================================================================== */
+/* Forcing the arrows to stay visible without shifting the text around.  */
+
+/* 1. Forcing the arrow to stay visible and fixed without pushing text */
+.markdown-rendered .heading-collapse-indicator,
+.cm-s-obsidian .collapse-indicator,
+.cm-s-obsidian .cm-fold-indicator {
+    opacity: 1 !important; /* Always visible */
+    visibility: visible !important;
+    position: absolute !important; /* Floating above the line */
+    inset-inline-start: -18px !important; /* Placed to the left of the heading */
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+}
+
+/* 2. Making the heading container flexible so the arrow doesn't push text */
+.markdown-rendered h1, .markdown-rendered h2, .markdown-rendered h3,
+.markdown-rendered h4, .markdown-rendered h5, .markdown-rendered h6,
+.cm-s-obsidian .cm-header-1, .cm-s-obsidian .cm-header-2, .cm-s-obsidian .cm-header-3,
+.cm-s-obsidian .cm-header-4, .cm-s-obsidian .cm-header-5, .cm-s-obsidian .cm-header-6 {
+    position: relative !important;
+    padding-inline-start: 1px !important; /* Natural spacing for text */
+}
+
+/* 3. Pinning exact colors for each heading level in read/edit modes */
+.markdown-rendered h1 .heading-collapse-indicator, .cm-header-1 .collapse-indicator { color: var(--h1-color) !important; }
+.markdown-rendered h2 .heading-collapse-indicator, .cm-header-2 .collapse-indicator { color: var(--h2-color) !important; }
+.markdown-rendered h3 .heading-collapse-indicator, .cm-header-3 .collapse-indicator { color: var(--h3-color) !important; }
+.markdown-rendered h4 .heading-collapse-indicator, .cm-header-4 .collapse-indicator { color: var(--h4-color) !important; }
+.markdown-rendered h5 .heading-collapse-indicator, .cm-header-5 .collapse-indicator { color: var(--h5-color) !important; }
+.markdown-rendered h6 .heading-collapse-indicator, .cm-header-6 .collapse-indicator { color: var(--h6-color) !important; }
+
+/* Inheriting color for the SVG arrow shape */
+.heading-collapse-indicator svg, 
+.collapse-indicator svg,
+.cm-fold-indicator svg {
+    fill: currentColor !important;
+    stroke: currentColor !important;
+}
+lor: #8235a3 !important; }
+body.theme-light .markdown-rendered h6, body.theme-light .cm-s-obsidian .HyperMD-header-6, body.theme-light .cm-s-obsidian .HyperMD-header-6 * { color: #9C7A00 !important; }
+
+body.theme-light .markdown-rendered a, body.theme-light .cm-s-obsidian span.cm-hmd-internal-link, body.theme-light .cm-s-obsidian span.cm-url, body.theme-light .cm-s-obsidian span.cm-link, body.theme-light .cm-s-obsidian span.cm-link * { color: #15538C !important; }
+
+body.theme-light .markdown-rendered strong, body.theme-light .cm-s-obsidian .cm-strong { color: #900C3F !important; } 
+body.theme-light .markdown-rendered em, body.theme-light .cm-s-obsidian .cm-em { color: #1E7A32 !important; } 
+
+body.theme-light .markdown-rendered h1, body.theme-light .cm-s-obsidian .HyperMD-header-1 { border-bottom: 2px solid #15538C !important; }
+body.theme-light .inline-title, body.theme-light .view-header-title { color: #135089 !important; }
+
+
+/* ===================================================================== */
+/* 🌙 2. Dark Theme Base (Pure AMOLED Black & Clear Dimensions)          */
+/* ===================================================================== */
+/* Core workspace colors, backgrounds, and text for the night theme.     */
+
+body.theme-dark {
+    /* 1. Core workspace (editor and behind-the-scenes): Pure black */
+    --background-primary: #000000 !important;
+    --workspace-background: #000000 !important;
+    background-color: #000000 !important;
+
+    /* 2. Sidebars: Very dark gray to give separating boundaries */
+    --background-secondary: #0a0a0a !important; 
+    --background-secondary-alt: #050505 !important;
+    
+    /* 3. Active tabs and top bar: Slightly different to make them pop */
+    --background-primary-alt: #0d0d0d !important;
+    --tab-background-active: #0d0d0d !important;
+    
+    /* Text color variables */
+    --h1-color: #42A5F5 !important;
+    --link-color: #42A5F5 !important;
+    --link-external-color: #42A5F5 !important;
+}
+
+body.theme-dark .markdown-rendered h1, body.theme-dark .cm-s-obsidian .HyperMD-header-1, body.theme-dark .cm-s-obsidian .HyperMD-header-1 * { color: #3e9be7 !important; } 
+body.theme-dark .markdown-rendered h2, body.theme-dark .cm-s-obsidian .HyperMD-header-2, body.theme-dark .cm-s-obsidian .HyperMD-header-2 * { color: #e24848 !important; } 
+body.theme-dark .markdown-rendered h3, body.theme-dark .cm-s-obsidian .HyperMD-header-3, body.theme-dark .cm-s-obsidian .HyperMD-header-3 * { color: #f19203 !important; } 
+body.theme-dark .markdown-rendered h4, body.theme-dark .cm-s-obsidian .HyperMD-header-4, body.theme-dark .cm-s-obsidian .HyperMD-header-4 * { color: #47ae4c !important; } 
+body.theme-dark .markdown-rendered h5, body.theme-dark .cm-s-obsidian .HyperMD-header-5, body.theme-dark .cm-s-obsidian .HyperMD-header-5 * { color: #cb4be2 !important; } 
+body.theme-dark .markdown-rendered h6, body.theme-dark .cm-s-obsidian .HyperMD-header-6, body.theme-dark .cm-s-obsidian .HyperMD-header-6 * { color: #fbc933 !important; } 
+
+body.theme-dark .markdown-rendered a, body.theme-dark .cm-s-obsidian span.cm-hmd-internal-link, body.theme-dark .cm-s-obsidian span.cm-url, body.theme-dark .cm-s-obsidian span.cm-link, body.theme-dark .cm-s-obsidian span.cm-link * { color: #42A5F5 !important; }
+
+body.theme-dark .markdown-rendered strong, body.theme-dark .cm-s-obsidian .cm-strong { color: #e24848 !important; } 
+body.theme-dark .markdown-rendered em, body.theme-dark .cm-s-obsidian .cm-em { color: #47ae4c !important; } 
+
+body.theme-dark .markdown-rendered h1, body.theme-dark .cm-s-obsidian .HyperMD-header-1 { border-bottom: 2px solid #3e9be7 !important; }
+body.theme-dark .inline-title, body.theme-dark .view-header-title { color: #3e9be7 !important; }
+
+/* New colors for dark mode to separate cards from the pure black background */
+body.theme-dark {
+    --background-secondary: #111111 !important; 
+    --background-secondary-alt: #111111 !important;
+    --background-modifier-form-field: #1a1a1a !important;
+    --background-primary-alt: #111111 !important;
+    --tab-background-active: #111111 !important;
+}
+
+
+/* ===================================================================== */
+/* 📝 3. Shared Headings & Links Settings                                */
+/* ===================================================================== */
+/* Global tweaks for heading spacing and link underlines.                */
+
+.markdown-rendered h1, .cm-s-obsidian .HyperMD-header-1 {
+    padding-bottom: 5px !important;
+    margin-bottom: 10px !important;
+    display: inline-block;
+    width: 100%;
+}
+.cm-s-obsidian span.cm-hmd-internal-link, .cm-s-obsidian span.cm-url, .cm-s-obsidian span.cm-link { text-decoration: none !important; }
+
+
+/* ===================================================================== */
+/* 💬 4. Blockquotes (Colors and background only, keeping original size) */
+/* ===================================================================== */
+/* Just tweaking colors and borders, keeping the original font size.     */
+
+body.theme-light .markdown-rendered blockquote, 
+body.theme-light .cm-s-obsidian .HyperMD-quote {
+    background-color: transparent !important;
+    border-left-color: #15538C !important;
+}
+
+body.theme-dark .markdown-rendered blockquote, 
+body.theme-dark .cm-s-obsidian .HyperMD-quote {
+    background-color: transparent !important;
+    border-left-color: #3e9be7 !important;
+}
+
+
+/* ===================================================================== */
+/* ➖ 5. Horizontal Rules (Dividers)                                     */
+/* ===================================================================== */
+/* Making dividers clean and subtle in both themes.                      */
+
+body .markdown-rendered hr, body .cm-s-obsidian hr {
+    border: none !important;
+    height: 1.5px !important;
+    background-color: #363636 !important; 
+    margin: 2em auto !important;
+}
+body.theme-light .markdown-rendered hr, body.theme-light .cm-s-obsidian hr { background-color: #363636 !important; }
+body.theme-dark .markdown-rendered hr { border-bottom-color: #3e9be7 !important; } 
+
+
+/* ===================================================================== */
+/* 🖍️ 6. Text Highlights                                                 */
+/* ===================================================================== */
+/* Bright yellow highlights with proper padding for desktop and mobile.  */
+
+body .cm-s-obsidian span.cm-highlight, body .cm-s-obsidian .cm-highlight, body .markdown-rendered mark {
+    background-color: #fac31e !important; color: #000000 !important; padding: 1.4 !important; border: none !important;
+}
+
+html body.is-mobile .cm-s-obsidian span.cm-highlight, html body.is-mobile .cm-s-obsidian .cm-highlight, html body.is-mobile .markdown-rendered mark {
+    padding: 0px 3.5px !important; border-radius: 4px !important;
+}
+
+
+/* ===================================================================== */
+/* 💻 7. Code Blocks & Workspace Fixes (Dark Mode Only)                  */
+/* ===================================================================== */
+/* Cleaning up code block borders, shadows, and active line highlights.  */
+
+body.theme-dark pre[class*="language-"], body.theme-dark code[class*="language-"], body.theme-dark .cm-s-obsidian .HyperMD-codeblock, body.theme-dark .cm-s-obsidian .cm-inline-code, body.theme-dark .markdown-rendered code {
+    border: none !important; border-radius: 5px !important;
+}
+
+body.theme-dark .cm-s-obsidian .HyperMD-codeblock-bg, body.theme-dark .cm-s-obsidian .cm-line.HyperMD-codeblock, html body.is-mobile.theme-dark .cm-s-obsidian .HyperMD-codeblock-bg, html body.is-tablet.theme-dark .cm-s-obsidian .HyperMD-codeblock-bg {
+    border: none !important; box-shadow: none !important; margin: 0 !important;
+}
+
+body.theme-dark .cm-s-obsidian .cm-line.HyperMD-codeblock::before, body.theme-dark .cm-s-obsidian .cm-line.HyperMD-codeblock::after, body.theme-dark .cm-s-obsidian .HyperMD-codeblock-bg::before, body.theme-dark .cm-s-obsidian .HyperMD-codeblock-bg::after, html body.is-mobile.theme-dark .cm-s-obsidian .cm-line.HyperMD-codeblock::before, html body.is-mobile.theme-dark .cm-s-obsidian .cm-line.HyperMD-codeblock::after, html body.is-mobile.theme-dark .cm-s-obsidian .HyperMD-codeblock-bg::before, html body.is-mobile.theme-dark .cm-s-obsidian .HyperMD-codeblock-bg::after {
+    display: none !important; border: none !important;
+}
+
+body.theme-dark .cm-s-obsidian .cm-line.HyperMD-codeblock, html body.is-mobile.theme-dark .cm-s-obsidian .cm-line.HyperMD-codeblock, html body.is-tablet.theme-dark .cm-s-obsidian .cm-line.HyperMD-codeblock {
+    padding-top: 0 !important; padding-bottom: 0 !important; background: transparent !important; box-shadow: none !important; border-radius: 0 !important; border: none !important; margin: 0 !important;
+}
+
+body.theme-dark .cm-s-obsidian .HyperMD-codeblock-bg { border-radius: 15px !important; }
+
+html body.is-mobile.theme-dark .cm-s-obsidian .HyperMD-codeblock-bg, html body.is-mobile.theme-dark pre[class*="language-"] { border-radius: 5px !important; border: none !important; box-shadow: none !important; margin: 15px 0 !important; }
+html body.is-mobile.theme-dark code[class*="language-"] { border-radius: 5px !important; border: none !important; }
+
+body.theme-dark .cm-s-obsidian .cm-activeline { border: none !important; background-color: transparent !important; }
+body.theme-dark .cm-s-obsidian .cm-activeline::before, body.theme-dark .cm-s-obsidian .cm-activeline::after { display: none !important; border: none !important; background: transparent !important; }
+
+
+/* ===================================================================== */
+/* 📋 8. Note Properties & Tags                                          */
+/* ===================================================================== */
+/* Styling the tag pills and the "Related" property links.               */
+
+body.theme-light .tag { background-color: #15538C !important; color: #FFFFFF !important; border: none !important; }
+body.theme-dark .tag { background-color: #42A5F5 !important; color: #000000 !important; border: none !important; }
+
+body.theme-dark .metadata-property[data-property-key="tags" i] .multi-select-pill { background-color: #4fa5ec !important; border: none !important; }
+body.theme-dark .metadata-property[data-property-key="tags" i] .multi-select-pill-content, body.theme-dark .metadata-property[data-property-key="tags" i] a { color: #000000 !important; font-weight: 600 !important; text-decoration: none !important; }
+body.theme-dark .metadata-property[data-property-key="tags" i] .multi-select-pill-remove-button { color: rgba(0, 0, 0, 0.6) !important; }
+body.theme-dark .metadata-property[data-property-key="tags" i] .multi-select-pill-remove-button:hover { color: #000000 !important; }
+
+body.theme-light .metadata-property[data-property-key="tags" i] .multi-select-pill { background-color: #15538C !important; border: none !important; }
+body.theme-light .metadata-property[data-property-key="tags" i] .multi-select-pill-content, body.theme-light .metadata-property[data-property-key="tags" i] a { color: #FFFFFF !important; font-weight: 600 !important; text-decoration: none !important; }
+body.theme-light .metadata-property[data-property-key="tags" i] .multi-select-pill-remove-button { color: rgba(255, 255, 255, 0.7) !important; }
+body.theme-light .metadata-property[data-property-key="tags" i] .multi-select-pill-remove-button:hover { color: #FFFFFF !important; }
+
+body .metadata-property[data-property-key="Related" i] .multi-select-pill, body .metadata-property[data-property-key="related" i] .multi-select-pill { background: transparent !important; background-color: transparent !important; border: none !important; box-shadow: none !important; padding: 0 !important; }
+body.theme-dark .metadata-property[data-property-key="Related" i] .multi-select-pill-content, body.theme-dark .metadata-property[data-property-key="Related" i] a { color: #3e9be7 !important; text-decoration: underline !important; }
+body.theme-light .metadata-property[data-property-key="Related" i] .multi-select-pill-content, body.theme-light .metadata-property[data-property-key="Related" i] a { color: #15538C !important; text-decoration: underline !important; }
+
+body.theme-dark .metadata-property[data-property-key="Related" i] .multi-select-pill-remove-button { color: #3e9be7 !important; }
+body.theme-light .metadata-property[data-property-key="Related" i] .multi-select-pill-remove-button { color: #15538C !important; }
+
+
+/* ===================================================================== */
+/* 📢 9. Callouts (Alerts & Notes)                                       */
+/* ===================================================================== */
+/* Defining the specific RGB colors for different callout types.         */
+
+body.theme-light .callout[data-callout="note"] { --callout-color: 21, 83, 140 !important; }
+body.theme-light .callout[data-callout="tip"] { --callout-color: 30, 122, 50 !important; }
+body.theme-light .callout[data-callout="important"] { --callout-color: 123, 31, 162 !important; }
+body.theme-light .callout[data-callout="caution"] { --callout-color: 245, 127, 23 !important; }
+body.theme-light .callout[data-callout="warning"] { --callout-color: 211, 47, 47 !important; }
+
+body.theme-dark .callout[data-callout="note"] { --callout-color: 66, 165, 245 !important; }
+body.theme-dark .callout[data-callout="tip"] { --callout-color: 102, 187, 106 !important; }
+body.theme-dark .callout[data-callout="important"] { --callout-color: 171, 71, 188 !important; }
+body.theme-dark .callout[data-callout="caution"] { --callout-color: 255, 167, 38 !important; }
+body.theme-dark .callout[data-callout="warning"] { --callout-color: 255, 82, 82 !important; }
+
+html body.is-mobile .callout, body .callout { border: 1px solid rgba(var(--callout-color), 0.2) !important; background-color: rgba(var(--callout-color), 0.1) !important; box-shadow: none !important; }
+
+
+/* ===================================================================== */
+/* 📊 10. Shared Tables (Light & Dark Modes)                             */
+/* ===================================================================== */
+/* Adding clean borders to tables without messing with backgrounds.      */
+
+body.theme-dark { --my-table-border-color: rgba(255, 255, 255, 0.252) !important; --table-row-background: transparent !important; }
+body.theme-light { --my-table-border-color: rgba(0, 0, 0, 0.332) !important; --table-row-background: transparent !important; }
+
+body .markdown-rendered table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+    border: 1px solid var(--my-table-border-color) !important; 
+}
+body .markdown-rendered th, body .markdown-rendered td {
+    border: 1px solid var(--my-table-border-color) !important; 
+}
+
+
+/* ===================================================================== */
+/* 🖥️ 11. App UI, Sidebar & Menus                                        */
+/* ===================================================================== */
+/* Cleaning up sidebar borders, active states, and icon colors.          */
+
+body .workspace .nav-file-title.is-active, body .workspace .tree-item-self.is-active { border-left: none !important; }
+body.theme-light .workspace .nav-file-title:hover, body.theme-light .workspace .nav-folder-title:hover, body.theme-light .workspace .tree-item-self:hover { border-left: none !important; }
+body.theme-dark .workspace .nav-file-title:hover, body.theme-dark .workspace .nav-folder-title:hover, body.theme-dark .workspace .tree-item-self:hover { border-left: none !important; }
+
+body.theme-light .workspace .nav-folder:hover > .nav-folder-children, body.theme-light .workspace .nav-folder.is-hovered > .nav-folder-children, body.theme-light .workspace .tree-item:hover > .tree-item-children, body.theme-light .workspace .tree-item.is-hovered > .tree-item-children { border-left-color: #0f5ea9 !important; }
+body.theme-dark .workspace .nav-folder:hover > .nav-folder-children, body.theme-dark .workspace .nav-folder.is-hovered > .nav-folder-children, body.theme-dark .workspace .tree-item:hover > .tree-item-children, body.theme-dark .workspace .tree-item.is-hovered > .tree-item-children { border-left-color: #15538C !important; }
+
+body.theme-dark .workspace .nav-folder-children, body.theme-dark .workspace .tree-item-children { border-left: 1px solid #343434 !important; }
+body.theme-light .workspace .nav-folder-children, body.theme-light .workspace .tree-item-children { border-left: 1px solid #757575 !important; }
+
+/* Desktop dashed header line */
+body.theme-light .workspace .view-header { border-bottom: 1px dashed rgba(0, 0, 0, 0.1) !important; box-shadow: none !important; }
+body.theme-dark .workspace .view-header { border-bottom: 1px dashed rgba(255, 255, 255, 0.15) !important; box-shadow: none !important; }
+
+/* Hiding dashed line on mobile */
+html body.is-mobile .workspace .view-header { border-bottom: none !important; }
+
+body .status-bar { border-top: none !important; box-shadow: none !important; }
+
+body.theme-light .workspace-tab-header.is-active .workspace-tab-header-inner-title { color: #15538C !important; font-weight: bold !important; }
+body.theme-dark .workspace-tab-header.is-active .workspace-tab-header-inner-title { color: #42A5F5 !important; font-weight: bold !important; }
+
+body.theme-dark .workspace .nav-file-title, body.theme-dark .workspace .nav-folder-title, body.theme-dark .workspace .tree-item-self, body.theme-dark .workspace .tree-item-icon svg, body.theme-dark .tree-item-icon svg, body.theme-dark .menu .menu-item { color: #c9c9c9 !important; }
+body.theme-light .workspace .nav-file-title, body.theme-light .workspace .nav-folder-title, body.theme-light .workspace .tree-item-self, body.theme-light .workspace .tree-item-icon svg, body.theme-light .tree-item-icon svg, body.theme-light .menu .menu-item { color: #2C2C2C !important; }
+
+body.theme-dark .workspace-ribbon .clickable-icon, body.theme-dark .workspace .nav-action-button, body.theme-dark .clickable-icon, body.theme-dark .clickable-icon svg { color: #b2b2b2 !important; }
+body.theme-light .workspace-ribbon .clickable-icon, body.theme-light .workspace .nav-action-button, body.theme-light .clickable-icon, body.theme-light .clickable-icon svg { color: #2C2C2C !important; }
+
+
+/* ===================================================================== */
+/* 🔘 12. Buttons & Text Cursor (Caret)                                  */
+/* ===================================================================== */
+/* Styling primary buttons and the blinking text cursor.                 */
+
+body.theme-light button.mod-cta, body.theme-light .mod-cta { background-color: #15538C !important; color: #FFFFFF !important; border: none !important; }
+body.theme-light button.mod-cta:hover, body.theme-light .mod-cta:hover { background-color: #0F3F6B !important; cursor: pointer !important; }
+
+body.theme-light .checkbox-container.is-enabled { background-color: #15538C !important; }
+body.theme-light .checkbox-container.is-enabled:hover { background-color: #0F3F6B !important; }
+
+body.theme-dark { --caret-color: #3e9be7 !important; }
+body.theme-light { --caret-color: #15538C !important; }
+
+
+/* ===================================================================== */
+/* 🗺️ 13. Mind Maps (Canvas & Mermaid) in Blue                           */
+/* ===================================================================== */
+/* Forcing the blue theme on Mermaid charts and Canvas nodes/edges.      */
+
+body.theme-light .mermaid rect, body.theme-light .mermaid circle, body.theme-light .mermaid polygon, body.theme-light .mermaid path, body.theme-light .mermaid .edgePath .path { stroke: #15538C !important; }
+
+body.theme-dark .mermaid rect, body.theme-dark .mermaid circle, body.theme-dark .mermaid polygon, body.theme-dark .mermaid path, body.theme-dark .mermaid .edgePath .path { stroke: #3e9be7 !important; }
+
+/* Dark mode (Light blue) */
+body.theme-dark {
+    --canvas-color-1: #3e9be7 !important;
+    --canvas-color-2: #3e9be7 !important;
+    --canvas-color-3: #3e9be7 !important;
+    --canvas-color-4: #3e9be7 !important;
+    --canvas-color-5: #3e9be7 !important;
+    --canvas-color-6: #3e9be7 !important;
+    --canvas-dot-pattern: rgba(62, 155, 231, 0.2) !important; /* Background dots */
+}
+body.theme-dark .canvas-node-container { border-color: #3e9be7 !important; }
+body.theme-dark .canvas-edges path.canvas-path { stroke: #3e9be7 !important; }
+
+
+/* ===================================================================== */
+/* 📱 14. Mobile & Tablet Customizations                                 */
+/* ===================================================================== */
+/* Fixing widths, removing ugly borders, and adding iOS-style blur.      */
+
+html body.is-mobile .vertical-tab-header-group-items, html body.is-mobile .vertical-tab-header { width: 100% !important; max-width: 100% !important; display: block !important; }
+
+html body.is-mobile, html body.is-tablet {
+    --workspace-modifier-border: transparent !important;
+    --background-modifier-border: transparent !important;
+    --background-modifier-border-hover: transparent !important;
+    --background-modifier-border-focus: transparent !important;
+}
+
+html body.is-mobile .workspace-leaf-content, html body.is-tablet .workspace-leaf-content, html body.is-mobile .workspace-split, html body.is-tablet .workspace-split, html body.is-mobile .metadata-container, html body.is-mobile .metadata-property, html body.is-mobile div.workspace-drawer-vault-profile, html body.is-mobile div.workspace-drawer-header-names-container, html body.is-mobile div.nav-vault-title, html body.is-mobile .workspace-drawer-name, html body.is-mobile div[aria-label="Manage vaults"], html body.is-mobile .workspace-drawer, html body.is-mobile .modal, body .modal, body .setting-item, body .vertical-tab-header {
+    border: none !important; box-shadow: none !important;
+}
+
+/* Forcing pure black background on mobile drawers in dark mode */
+html body.is-mobile.theme-dark .workspace-drawer,
+html body.is-mobile.theme-dark .workspace-drawer-header,
+html body.is-mobile.theme-dark .workspace-drawer-content,
+html body.is-mobile.theme-dark .workspace-drawer-vault-profile {
+    background-color: #000000 !important;
+}
+
+/* Adding iOS-style blur to the bottom toolbar and ribbon */
+html body.is-mobile .mobile-toolbar,
+html body.is-mobile .workspace-ribbon,
+html body.is-mobile .view-action {
+    backdrop-filter: blur(15px) !important;
+    -webkit-backdrop-filter: blur(15px) !important;
+}
+
+/* Making the bottom bar semi-transparent so the blur shows in dark mode */
+html body.is-mobile.theme-dark .mobile-toolbar,
+html body.is-mobile.theme-dark .workspace-ribbon {
+    background-color: rgba(17, 17, 17, 0.7) !important;
+}
+
+/* Making the bottom bar semi-transparent so the blur shows in light mode */
+html body.is-mobile.theme-light .mobile-toolbar,
+html body.is-mobile.theme-light .workspace-ribbon {
+    background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Extra emphasis for dark mode dropdowns */
+body.theme-dark .dropdown, 
+body.theme-dark select {
+    background-color: #1a1a1a !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Forcing pure black on inner drawer elements */
+html body.is-mobile.theme-dark .workspace-drawer-inner,
+html body.is-mobile.theme-dark .nav-buttons-container,
+html body.is-mobile.theme-dark .workspace-drawer-vault-profile,
+html body.is-mobile.theme-dark .workspace-drawer-settings {
+    background-color: #000000 !important;
+}
+
+/* Highlighting file control icons with a subtle #111111 background */
+html body.is-mobile.theme-dark .nav-action-button {
+    background-color: #111111 !important;
+    border-radius: 8px !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Blending the vault profile icon into the black background */
+html body.is-mobile.theme-dark .workspace-drawer-vault-profile .clickable-icon {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+
+/* ===================================================================== */
+/* 🌙 15. Dark Mode Tweaks: Pure AMOLED Black & Button Outlines          */
+/* ===================================================================== */
+/* Killing gray backgrounds and giving buttons clear boundaries.         */
+
+/* 1. Removing any gray background from settings and menus, making it pure black */
+body.theme-dark {
+    --background-secondary: #000000 !important;
+    --background-secondary-alt: #000000 !important;
+}
+
+body.theme-dark .modal, 
+body.theme-dark .setting-item,
+body.theme-dark .vertical-tab-header,
+body.theme-dark .vertical-tab-content-container {
+    background-color: #000000 !important;
+    background: #000000 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* 2. Highlighting interactive buttons and dropdowns in settings with a distinct dark border */
+body.theme-dark .setting-item-control button,
+body.theme-dark .setting-item-control .dropdown,
+body.theme-dark .setting-item-control select,
+body.theme-dark input[type="text"],
+body.theme-dark input[type="search"] {
+    background-color: #111111 !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: 8px !important;
+    color: #ffffff !important;
+}
+
+/* 3. Outlining menu items (Outline and Files) so you know each button's space */
+body.theme-dark .menu .menu-item,
+body.theme-dark .tree-item-self {
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 8px !important;
+    margin-bottom: 6px !important; /* Simple spacing between buttons */
+    background-color: #000000 !important;
+}
+
+/* Subtle effect when touching a button in the menu */
+body.theme-dark .menu .menu-item:hover,
+body.theme-dark .tree-item-self:hover {
+    background-color: #111111 !important;
+    border-color: rgba(62, 155, 231, 0.5) !important; /* Light blue on touch */
+}
+
+/* 4. Fixing connecting lines in dropdown menus so the shape doesn't break with borders */
+body.theme-dark .tree-item-children {
+    border-left: 1px dashed rgba(255, 255, 255, 0.15) !important;
+    margin-left: 5px !important;
+    padding-left: 8px !important;
+}
+
+
+/* ===================================================================== */
+/* 🛠️ 16. Selection, Transparency & Clarity Fixes (Dark Mode Only)       */
+/* ===================================================================== */
+/* Removing random highlights and making long-press menus readable.      */
+
+/* 1. Removing random selection from (folders, Outline headings, and properties) */
+body.theme-dark .tree-item-self {
+    border: none !important;
+    background-color: transparent !important;
+    margin-bottom: 0 !important;
+}
+
+/* 2. Keeping the brilliant idea: Outlining only standalone notes (outside folders) */
+body.theme-dark .nav-folder.mod-root > .nav-folder-children > .nav-file > .nav-file-title {
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 8px !important;
+    margin-bottom: 6px !important;
+    background-color: #000000 !important;
+}
+body.theme-dark .nav-folder.mod-root > .nav-folder-children > .nav-file > .nav-file-title:hover {
+    background-color: #111111 !important;
+    border-color: rgba(62, 155, 231, 0.5) !important;
+}
+
+/* 3. Making pop-up menus (on long press) blurry and readable instead of transparent */
+body.theme-dark .menu {
+    background-color: rgba(17, 17, 17, 0.85) !important;
+    backdrop-filter: blur(15px) !important;
+    -webkit-backdrop-filter: blur(15px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7) !important;
+}
+
+/* 4. Highlighting settings section titles (like General, Editor) in blue with an underline */
+body.theme-dark .vertical-tab-header-group-title {
+    color: #3e9be7 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    padding-bottom: 5px !important;
+    margin-bottom: 10px !important;
+    margin-top: 15px !important;
+}
+
+/* 5. Showing the font size slider track in settings */
+body.theme-dark input[type="range"] {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    border-radius: 4px !important;
+    height: 4px !important;
+}
+body.theme-dark input[type="range"]::-webkit-slider-runnable-track {
+    background-color: transparent !important;
+}
+
+
+/* ===================================================================== */
+/* 🚀 17. Final Fixes: Menus, Main Settings & Properties                 */
+/* ===================================================================== */
+/* Cleaning up properties and making popups pure AMOLED black.           */
+
+/* 1. Removing any selection or borders from properties completely */
+body.theme-dark .metadata-property,
+body.theme-dark .metadata-property-key,
+body.theme-dark .metadata-property-value,
+body.theme-dark .metadata-container {
+    border: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+/* 2. Pop-up menus (Files menu etc): Pure AMOLED black without annoying transparency */
+body.theme-dark .menu,
+body.theme-dark .suggestion-container,
+body.theme-dark .prompt {
+    background-color: #000000 !important; /* Pure AMOLED background */
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(15px) !important;
+    -webkit-backdrop-filter: blur(15px) !important;
+}
+
+/* Outlining buttons inside these menus (like Close, Reading view, Files) */
+body.theme-dark .menu .menu-item,
+body.theme-dark .suggestion-item {
+    background-color: #000000 !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 8px !important;
+    margin-bottom: 6px !important;
+    padding: 10px 12px !important;
+}
+
+/* Touch effect on menu buttons */
+body.theme-dark .menu .menu-item:hover,
+body.theme-dark .suggestion-item.is-selected {
+    background-color: #111111 !important;
+    border-color: rgba(62, 155, 231, 0.5) !important;
+}
+
+/* 3. Main settings: Turning every section (General, Editor, etc) into a distinct outlined button */
+body.theme-dark .vertical-tab-nav-item {
+    background-color: #000000 !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 8px !important;
+    margin-bottom: 8px !important;
+    padding: 12px 15px !important; /* Enlarging space to look like a clear button */
+}
+
+/* Active section color or touch effect in settings */
+body.theme-dark .vertical-tab-nav-item.is-active,
+body.theme-dark .vertical-tab-nav-item:hover {
+    background-color: #111111 !important;
+    border-color: rgba(62, 155, 231, 0.5) !important;
+}
+
+/* Clearing any old gray backgrounds from settings */
+body.theme-dark .vertical-tabs-container {
+    background-color: transparent !important;
+}
+
+
+/* ===================================================================== */
+/* 🎯 18. Last 3 Tweaks (Files, Settings & Properties)                   */
+/* ===================================================================== */
+/* Finalizing the Files menu, General settings button, and properties.   */
+
+/* 1. Making the pop-up menu (like Files) completely opaque black, canceling transparency */
+body.theme-dark .menu,
+body.theme-dark .menu-item-group {
+    background-color: #000000 !important;
+    background: #000000 !important;
+    backdrop-filter: none !important; /* Canceling the glass filter */
+    -webkit-backdrop-filter: none !important;
+}
+
+/* 2. Fixing the first button in settings (General) to match the rest of the sections */
+body.theme-dark .vertical-tab-header-group-items {
+    background-color: transparent !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important; /* Removing the container's twist */
+}
+body.theme-dark .vertical-tab-nav-item,
+body.theme-dark .vertical-tab-nav-item:first-child {
+    border-radius: 8px !important; /* Forcing all buttons to the same roundness */
+}
+
+/* 3. Removing selection completely from properties (since they were affected by input box code) */
+body.theme-dark .metadata-container input[type="text"],
+body.theme-dark .metadata-container input[type="search"],
+body.theme-dark .metadata-container input[type="number"],
+body.theme-dark .metadata-property,
+body.theme-dark .metadata-property-key,
+body.theme-dark .metadata-property-value,
+body.theme-dark .multi-select-container {
+    border: none !important;
+    background-color: transparent !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+
+/* ===================================================================== */
+/* ✨ 19. Fine Final Touches                                             */
+/* ===================================================================== */
+/* Tweaking the Files menu opacity and centering settings titles.        */
+
+/* 1. Bottom Files menu: Removing transparency completely, making it AMOLED with button outlines (Dark only) */
+body.theme-dark .menu {
+    background: #000000 !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}
+body.theme-dark .menu .menu-item {
+    background-color: #000000 !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 8px !important;
+    margin-bottom: 6px !important;
+}
+
+/* 2. Settings titles (like Options): Centering, dynamic scaling, and removing underline (Dark only) */
+body.theme-dark .vertical-tab-header-group-title {
+    
+    border-bottom: none !important; /* Removing underline */
+    font-size: 20px !important; /* Dynamic size fitting the screen */
+    padding-bottom: 0 !important;
+    margin-bottom: 15px !important;
+}
+
+
+/* ===================================================================== */
+/* 📱 20. Professional Mobile Touches (iOS Style, Folders & Menus)       */
+/* ===================================================================== */
+/* Floating glass toolbar and fixing root folder/file highlights.        */
+
+/* 1. Writing toolbar (Mobile Toolbar): Floating and glass-transparent (iPhone style) */
+html body.is-mobile.theme-dark .mobile-toolbar {
+    background-color: rgba(25, 25, 25, 0.7) !important; /* Transparent black */
+    backdrop-filter: blur(20px) saturate(180%) !important; /* Strong blur effect */
+    -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 16px !important; /* Rounded edges */
+    margin: 0px 10px 10px 10px !important; /* Separating from edges to make it float */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.47) !important;
+}
+
+/* 2. Outlining folders and files (Main ones only outside): Hiding selection from inner files */
+/* Clearing any inner selection */
+body.theme-dark .nav-folder-title,
+body.theme-dark .nav-file-title {
+    border: none !important;
+    background-color: transparent !important;
+}
+/* Returning selection to standalone folders and files (in the main UI only) */
+body.theme-dark .nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title,
+body.theme-dark .nav-folder.mod-root > .nav-folder-children > .nav-file > .nav-file-title {
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 8px !important;
+    margin-bottom: 6px !important;
+    background-color: #000000 !important;
+    margin-left: 4px !important;
+    width: calc(100% - 4px) !important;
+}
+/* Touch effect for main files only */
+body.theme-dark .nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title:hover,
+body.theme-dark .nav-folder.mod-root > .nav-folder-children > .nav-file > .nav-file-title:hover {
+    background-color: #111111 !important;
+    border-color: rgba(62, 155, 231, 0.5) !important;
+}
+
+
+/* ===================================================================== */
+/* 🍏 21. Toggle Switches with iOS Style & Smooth Animation              */
+/* ===================================================================== */
+/* Making checkboxes look and feel exactly like native iOS toggles.      */
+
+/* 1. Button container (background): Slightly larger than the dot to contain it fully */
+body.theme-dark .checkbox-container {
+    position: relative !important;
+    width: 52px !important;  /* Total button width */
+    height: 37px !important; /* Button height */
+    border-radius: 16px !important;
+    padding: 0 !important;
+    background-color: #39393d !important;
+    border: none !important;
+   
+}
+
+body.theme-dark .checkbox-container.is-enabled {
+    background-color: #34c759 !important; /* Apple green */
+}
+
+/* 2. The white dot: Precise circular size calculated to not exit the frame */
+body.theme-dark .checkbox-container:after {
+    content: '' !important;
+    position: absolute !important;
+    top: 2px !important;  /* 2px top margin */
+    left: 2px !important; /* 2px left margin */
+    width: 28px !important;  /* Dot width equals height to be 100% circular */
+    height: 28px !important; 
+    border-radius: 50% !important;
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3) !important;
+    
+    
+    
+    /* Smooth and fluid motion without bouncing */
+   
+
+    /* 🔴 The tweak here: Preventing the white dot from interacting with touch to avoid tearing */
+    pointer-events: none !important;
+}
+
+/* 3. Dot movement when enabled: Calculated to stop exactly 2px before the right edge */
+body.theme-dark .checkbox-container.is-enabled:after {
+    transform: translateX(20px) !important; 
+}
+
+
+/* ===================================================================== */
+/* 🚀 22. Final Mobile Fixes (Typing Toolbar & Files Menu)               */
+/* ===================================================================== */
+/* Making the mobile Files menu 100% opaque black.                       */
+
+/* 1. Fixing the Files menu on mobile to be 100% solid black without any transparency */
+html body.is-mobile.theme-dark .menu,
+html body.is-mobile.theme-dark .menu-item-group,
+html body.is-mobile.theme-dark .menu-container {
+    background-color: #000000 !important;
+    background: #000000 !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.8) !important; /* Subtle shadow to separate from background */
+}
+
+
+/* ===================================================================== */
+/* 🚀 23. Killing the Ugly Toolbar Background (True iOS Capsule)         */
+/* ===================================================================== */
+/* Making the main toolbar transparent and moving the glass effect in.   */
+
+/* 1. Destroying the wide main bar background and making it completely transparent floating above text */
+html body.is-mobile.theme-dark .mobile-toolbar {
+    position: absolute !important; 
+    bottom: 15px !important; /* Distance from keyboard */
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    z-index: 999 !important;
+}
+
+/* Hiding any fake shadows or lines Obsidian puts behind the bar */
+html body.is-mobile.theme-dark .mobile-toolbar::before,
+html body.is-mobile.theme-dark .mobile-toolbar::after {
+    display: none !important; 
+}
+
+/* 2. Moving the glass design (blur) to the inner container (icons) to be the floating capsule */
+html body.is-mobile.theme-dark .mobile-toolbar-options-container {
+    background-color: #1e1e1e00 !important;
+    backdrop-filter: blur(25px) saturate(200%) !important;
+    -webkit-backdrop-filter: blur(25px) saturate(200%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: 18px !important;
+    margin: 0 10px !important; /* Separating from left and right edges */
+    padding: 0 5px !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6) !important;
+}
+
+
+/* ===================================================================== */
+/* 💻 24. Final Look for Code Blocks                                     */
+/* ===================================================================== */
+/* Giving code blocks a nice dark gray box with soft rounded corners.    */
+
+/* 1. Defining background color (very dark gray) to separate code from the black ground */
+html body.theme-dark {
+    --code-bg-color: #111111 !important; 
+}
+
+/* 2. Code block in Reading View */
+html body.theme-dark .markdown-rendered pre {
+    background-color: var(--code-bg-color) !important;
+    border-radius: 12px !important; /* Soft rounded edges like the picture */
+    padding: 16px !important; /* Comfortable inner space */
+    margin: 15px 0 !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important; /* Very light frame to highlight the box */
+    box-shadow: none !important;
+}
+
+/* 3. Code block in Live Preview */
+/* Forcing code background to appear as an independent box */
+html body.theme-dark .cm-s-obsidian .HyperMD-codeblock-bg {
+    display: block !important; 
+    background-color: var(--code-bg-color) !important;
+    border-radius: 12px !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    margin: 15px 0 !important;
+}
+
+/* Adjusting inner text spacing in edit mode so it doesn't stick to the edges */
+html body.theme-dark .cm-s-obsidian .cm-line.HyperMD-codeblock {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    background-color: transparent !important; 
+}
+
+/* 4. Inline code in a normal line (for edit and read) */
+html body.theme-dark .cm-s-obsidian .cm-inline-code,
+html body.theme-dark .markdown-rendered :not(pre) > code {
+    background-color: var(--code-bg-color) !important;
+    border-radius: 6px !important;
+    padding: 3px 6px !important; /* Small space to highlight the word */
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    color: #e24848 !important; /* Inline text color red like the picture */
+}
+
+
+/* ===================================================================== */
+/* 🎨 25. Tweaking Syntax Highlighting Colors Inside Code                */
+/* ===================================================================== */
+/* Matching the exact syntax colors from the reference design.           */
+
+html body.theme-dark {
+    --code-string: #e24848 !important;   /* Red: for text inside quotes */
+    --code-keyword: #3e9be7 !important;  /* Blue: for reserved words and commands */
+    --code-function: #3e9be7 !important; /* Blue: for functions and variables */
+    --code-operator: #c9c9c9 !important; /* Light gray: for symbols (=, +, -) */
+    --code-comment: #757575 !important;  /* Muted gray: for comments */
+}
+
+/* Forcing these colors in edit mode */
+html body.theme-dark .cm-s-obsidian span.cm-string { color: var(--code-string) !important; }
+html body.theme-dark .cm-s-obsidian span.cm-keyword { color: var(--code-keyword) !important; }
+html body.theme-dark .cm-s-obsidian span.cm-def, 
+html body.theme-dark .cm-s-obsidian span.cm-variable,
+html body.theme-dark .cm-s-obsidian span.cm-variable-2,
+html body.theme-dark .cm-s-obsidian span.cm-variable-3,
+html body.theme-dark .cm-s-obsidian span.cm-property,
+html body.theme-dark .cm-s-obsidian span.cm-builtin { color: var(--code-function) !important; }
+html body.theme-dark .cm-s-obsidian span.cm-operator { color: var(--code-operator) !important; }
+html body.theme-dark .cm-s-obsidian span.cm-comment { color: var(--code-comment) !important; }
+
+
+/* ===================================================================== */
+/* 💻 26. Forcing Code Background Color (#111111) in Live Preview        */
+/* ===================================================================== */
+/* Making sure the #111111 background actually applies in edit mode.     */
+
+/* 1. Full block background (Code Block) in edit mode (for mobile and laptop) */
+html body.theme-dark .cm-s-obsidian .HyperMD-codeblock-bg,
+html body.is-mobile.theme-dark .cm-s-obsidian .HyperMD-codeblock-bg {
+    background-color: #111111 !important;
+    background: #111111 !important;
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* 2. Inline code background in text line in edit mode */
+html body.theme-dark .cm-s-obsidian .cm-inline-code,
+html body.is-mobile.theme-dark .cm-s-obsidian .cm-inline-code {
+    background-color: #111111 !important;
+    background: #111111 !important;
+}
+
+
+/* ===================================================================== */
+/* 🏷️ 27. Making Note Properties Look Exactly Like Mobile (Desktop)      */
+/* ===================================================================== */
+/* Creating a nice card for properties on the desktop view.              */
+
+/* 1. Making the main container transparent so the word Properties stays outside the card */
+html:not(.is-mobile) body.theme-dark .metadata-container {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+/* 2. Activating the grouped background and rounding corners on the properties content itself only */
+html:not(.is-mobile) body.theme-dark .metadata-content {
+    background-color: #121212 !important; /* Same color as the mobile card */
+    border-radius: 16px !important; /* Rounding corners */
+    border: 1px solid rgba(255, 255, 255, 0.05) !important; /* Light frame */
+    padding: 10px !important; /* Inner space so text doesn't stick to the letter */
+    margin-top: 10px !important; /* Space separating the card from the word Properties above it */
+}
+
+
+/* ===================================================================== */
+/* ⬛ 28. The Final Blow: 100% Black Background & Window Gaps (Desktop)   */
+/* ===================================================================== */
+/* Ensuring absolutely no gray leaks in the desktop dark mode.           */
+
+/* 1. Forcing the entire app's back wall to pure black */
+html:not(.is-mobile) body.theme-dark,
+html:not(.is-mobile) body.theme-dark #app-container,
+html:not(.is-mobile) body.theme-dark .app-container,
+html:not(.is-mobile) body.theme-dark .workspace,
+html:not(.is-mobile) body.theme-dark .workspace-background {
+    background: #000000 !important;
+    background-color: #000000 !important;
+    background-image: none !important;
+}
+
+/* 2. Destroying gap color variables in floating themes */
+html:not(.is-mobile) body.theme-dark {
+    --workspace-background: #000000 !important;
+    --background-secondary-alt: #000000 !important;
+    --background-primary-alt: #000000 !important;
+}
+
+/* 3. Ensuring top and bottom bars take the same pure black */
+html:not(.is-mobile) body.theme-dark .titlebar,
+html:not(.is-mobile) body.theme-dark .status-bar {
+    background: #000000 !important;
+    background-color: #000000 !important;
+}
+
+
+/* ===================================================================== */
+/* ⚙️ 29. Adding a Frame to Every Setting & Stretching Full Width        */
+/* ===================================================================== */
+/* Making settings look like distinct cards stretching across the screen.*/
+
+/* 1. Creating a frame for every normal setting and stretching it full screen width */
+html:not(.is-mobile) body.theme-dark .setting-item:not(.setting-item-heading) {
+    border: 1px solid rgba(255, 255, 255, 0.1) !important; /* Light gray frame */
+    border-radius: 8px !important; /* Rounding corners */
+    padding: 13px !important; /* Inner space */
+    margin-bottom: 10px !important; /* Space between settings */
+    width: 100% !important; /* 👈 Stretching setting full screen width */
+    max-width: 100% !important; /* 👈 Breaking any size limits from the theme */
+    box-sizing: border-box !important; /* So frame and spaces don't affect width */
+}
+
+/* 2. Protecting headings (like Interface) and stretching them too without frames */
+html:not(.is-mobile) body.theme-dark .setting-item.setting-item-heading {
+    border: none !important;
+    background: transparent !important;
+    padding-bottom: 10px !important;
+    margin-bottom: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+
+/* ===================================================================== */
+/* ☀️ 30. Tweaking Light Mode Menus & Files to Match Dark Mode Style     */
+/* ===================================================================== */
+/* Adding clean borders to light mode popups and root files.             */
+
+/* Making pop-up menus and Files list in light mode outlined with a frame */
+body.theme-light .menu,
+body.theme-light .suggestion-container,
+body.theme-light .prompt {
+    background-color: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.15) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+}
+
+body.theme-light .menu .menu-item,
+body.theme-light .suggestion-item {
+    background-color: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    border-radius: 8px !important;
+    margin-bottom: 6px !important;
+}
+
+/* Applying the idea of outlining standalone files and main folders in the UI for light mode */
+body.theme-light .nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title,
+body.theme-light .nav-folder.mod-root > .nav-folder-children > .nav-file > .nav-file-title {
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    border-radius: 8px !important;
+    margin-bottom: 6px !important;
+    background-color: #ffffff !important;
+    margin-left: 4px !important;
+    width: calc(100% - 4px) !important;
+}
+
+/* Touch effect (Hover) in light mode for main files */
+body.theme-light .nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title:hover,
+body.theme-light .nav-folder.mod-root > .nav-folder-children > .nav-file > .nav-file-title:hover {
+    background-color: rgba(0, 0, 0, 0.05) !important;
+    border-color: rgba(21, 83, 140, 0.5) !important;
+}
+
+
+/* ===================================================================== */
+/* 💻 31. Enabling Code Background & Syntax Colors (Light Mode)          */
+/* ===================================================================== */
+/* Applying the theme's specific colors to code syntax in day mode.      */
+
+/* 2. Coloring code texts inside edit mode for light mode */
+body.theme-light .cm-s-obsidian span.cm-keyword,
+body.theme-light .cm-s-obsidian span.cm-builtin,
+body.theme-light .cm-s-obsidian span.cm-def { color: #15538C !important; } /* Theme blue */
+body.theme-light .cm-s-obsidian span.cm-string,
+body.theme-light .cm-s-obsidian span.cm-hmd-codeblock-string { color: #900C3F !important; } /* Theme red */
+body.theme-light .cm-s-obsidian span.cm-number,
+body.theme-light .cm-s-obsidian span.cm-atom { color: #B84300 !important; } /* Dark orange */
+body.theme-light .cm-s-obsidian span.cm-comment { color: #1E7A32 !important; } /* Green for comments */
+
+
+/* ===================================================================== */
+/* 🎯 32. Adjusting Hover & Selection for Files in Dark Mode             */
+/* ===================================================================== */
+/* Creating a soft, pill-shaped hover effect for files.                  */
+
+html:not(.is-mobile) body.theme-dark .nav-file-title:hover,
+html:not(.is-mobile) body.theme-dark .nav-folder-title:hover,
+html:not(.is-mobile) body.theme-dark .tree-item-self:hover {
+    background-color: #ffffff28 !important; /* Transparent and calm gray capsule */
+    border-radius: 6px !important; /* Soft rounded edges like the picture */
+    color: #ffffff !important;
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+    transition: background-color 0.15s ease !important;
+}
+
+/* Locking any sudden blue edges or vertical lines appearing on hover */
+html:not(.is-mobile) body.theme-dark .tree-item-self:hover {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+
+/* ===================================================================== */
+/* 🏷️ 33. Tweaking the Properties Card in Light Mode                    */
+/* ===================================================================== */
+/* Giving the properties section a nice beige card look in day mode.     */
+
+/* 1. Removing any white background or borders from input boxes completely */
+body.theme-light .metadata-container input[type="text"],
+body.theme-light .metadata-container input[type="search"],
+body.theme-light .metadata-container input[type="number"],
+body.theme-light .metadata-property,
+body.theme-light .metadata-property-key,
+body.theme-light .metadata-property-value,
+body.theme-light .multi-select-container {
+    border: none !important;
+    background-color: transparent !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+/* 2. Making the main container transparent so the word Properties stays outside (Desktop and Mobile) */
+body.theme-light .metadata-container {
+    background-color: transparent !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+/* 3. Applying the custom color (#DDD0C6) to the inner properties card only with rounded corners */
+body.theme-light .metadata-content {
+    background-color: #DDD0C6 !important; /* The custom beige color */
+    border-radius: 16px !important; 
+    border: 1px solid rgba(0, 0, 0, 0.05) !important; /* Very light frame */
+    padding: 10px !important; 
+    margin-top: 10px !important; 
+}
+
+
+/* ===================================================================== */
+/* 🚀 34. Floating Editing Toolbar Capsule (Light Mode)                  */
+/* ===================================================================== */
+/* Matching the light mode toolbar to the dark mode floating capsule.    */
+
+/* 1. Destroying the main background and making it completely transparent above text */
+html body.is-mobile.theme-light .mobile-toolbar {
+    position: absolute !important; 
+    bottom: 15px !important; 
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    z-index: 999 !important;
+}
+
+/* Hiding any fake shadows or lines */
+html body.is-mobile.theme-light .mobile-toolbar::before,
+html body.is-mobile.theme-light .mobile-toolbar::after {
+    display: none !important; 
+}
+
+
+/* ===================================================================== */
+/* 📋 35. Formatting Menu & Popup Backgrounds in Light Mode              */
+/* ===================================================================== */
+/* Using a cohesive beige tone for light mode menus.                     */
+
+/* 1. Giving menus and pop-ups a consistent background color (same as properties or slightly lighter beige) */
+body.theme-light .menu,
+body.theme-light .suggestion-container,
+body.theme-light .prompt,
+body.theme-light .workspace-drawer {
+    background-color: #EDE4DC !important; /* Calm beige matching the background */
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+}
+
+/* 2. Adjusting option buttons inside this menu to take a consistent and comfortable background */
+body.theme-light .menu .menu-item,
+body.theme-light .suggestion-item {
+    background-color: #E2D7CD !important; /* Slightly darker shade to stand out as separate buttons */
+    border: 1px solid rgba(0, 0, 0, 0.06) !important;
+    border-radius: 8px !important;
+    margin-bottom: 6px !important;
+}
+
+/* 3. Touch effect (Hover) on menu options in light mode */
+body.theme-light .menu .menu-item:hover,
+body.theme-light .suggestion-item.is-selected {
+    background-color: #D6CBC1 !important;
+    border-color: rgba(21, 83, 140, 0.3) !important;
+}
+
+
+/* ===================================================================== */
+/* 📋 36. Formatting Menu & Popup Backgrounds in Dark Mode               */
+/* ===================================================================== */
+/* Ensuring dark mode menus are pure black with distinct pill buttons.   */
+
+/* 1. Giving menus and pop-ups a pure AMOLED black with a light frame */
+body.theme-dark .menu,
+body.theme-dark .suggestion-container,
+body.theme-dark .prompt,
+body.theme-dark .workspace-drawer {
+    background-color: #000000 !important;
+    background: #000000 !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* 2. Adjusting option buttons inside the menu to be separate capsules in #111111 */
+body.theme-dark .menu .menu-item,
+body.theme-dark .suggestion-item {
+    background-color: #111111 !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 8px !important;
+    margin-bottom: 6px !important;
+}
+
+/* 3. Touch effect (Hover) on menu options in dark mode */
+body.theme-dark .menu .menu-item:hover,
+body.theme-dark .suggestion-item.is-selected {
+    background-color: #1a1a1a !important;
+    border-color: rgba(62, 155, 231, 0.5) !important;
+}
+
+
+/* ===================================================================== */
+/* 🎯 37. The Genius Fix: Floating Arrows Without Shifting Text          */
+/* ===================================================================== */
+/* Making collapse arrows float perfectly without pushing text around.   */
+
+/* 1. Lines and headings flexible without forced spaces (windows stuck to the word) */
+.markdown-rendered h1, .markdown-rendered h2, .markdown-rendered h3,
+.markdown-rendered h4, .markdown-rendered h5, .markdown-rendered h6,
+.cm-s-obsidian .cm-line {
+    position: relative !important; 
+}
+
+.cm-s-obsidian .cm-header-1, .cm-s-obsidian .cm-header-2, .cm-s-obsidian .cm-header-3,
+.cm-s-obsidian .cm-header-4, .cm-s-obsidian .cm-header-5, .cm-s-obsidian .cm-header-6 {
+    padding-inline-start: 0px !important;
+    padding-inline-end: 0px !important;
+    margin: 0 !important;
+}
+
+/* 2. The "Ghost" arrow (floating) in read and editor so it leaves no annoying space */
+.heading-collapse-indicator,
+.cm-fold-indicator {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: absolute !important; 
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    margin: 0 !important;
+    height: 100% !important; 
+    padding: 0 !important;
+    width: 18px !important;
+    height: 18px !important;
+    opacity: 0 !important;
+    visibility: visible !important;
+    transition: opacity 0.6s ease 2s !important; 
+    cursor: pointer !important;
+    z-index: 50 !important;
+}
+
+/* 3. Precisely adjusting the floating arrow place so it doesn't hit the windows */
+/* 👈 Reading mode */
+.markdown-rendered .heading-collapse-indicator {
+    inset-inline-start: -22px !important;
+}
+/* 👈 Editor mode (We threw the same arrow out 26px to distance it from ### without pushing it) */
+.cm-s-obsidian .cm-fold-indicator {
+    inset-inline-start: -19px !important; 
+}
+
+/* 4. Instant showing on interaction */
+.markdown-rendered h1:hover .heading-collapse-indicator,
+.markdown-rendered h2:hover .heading-collapse-indicator,
+.markdown-rendered h3:hover .heading-collapse-indicator,
+.markdown-rendered h4:hover .heading-collapse-indicator,
+.markdown-rendered h5:hover .heading-collapse-indicator,
+.markdown-rendered h6:hover .heading-collapse-indicator,
+.cm-s-obsidian .cm-line:hover .cm-fold-indicator,
+.cm-s-obsidian .cm-active .cm-fold-indicator { 
+    opacity: 1 !important;
+    transition: opacity 0.1s ease 0s !important;
+}
+
+/* 5. Exactly matching colors */
+.markdown-rendered h1 .heading-collapse-indicator, .cm-s-obsidian .cm-header-1 .cm-fold-indicator { color: var(--h1-color) !important; }
+.markdown-rendered h2 .heading-collapse-indicator, .cm-s-obsidian .cm-header-2 .cm-fold-indicator { color: var(--h2-color) !important; }
+.markdown-rendered h3 .heading-collapse-indicator, .cm-s-obsidian .cm-header-3 .cm-fold-indicator { color: var(--h3-color) !important; }
+.markdown-rendered h4 .heading-collapse-indicator, .cm-s-obsidian .cm-header-4 .cm-fold-indicator { color: var(--h4-color) !important; }
+.markdown-rendered h5 .heading-collapse-indicator, .cm-s-obsidian .cm-header-5 .cm-fold-indicator { color: var(--h5-color) !important; }
+.markdown-rendered h6 .heading-collapse-indicator, .cm-s-obsidian .cm-header-6 .cm-fold-indicator { color: var(--h6-color) !important; }
+
+/* 6. Inheriting color and drawing size */
+.heading-collapse-indicator svg, 
+.cm-fold-indicator svg {
+    fill: currentColor !important;
+    stroke: currentColor !important;
+    width: 14px !important;
+    height: 14px !important;
+}

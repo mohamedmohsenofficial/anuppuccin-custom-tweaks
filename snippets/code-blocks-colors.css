@@ -1,0 +1,49 @@
+/* ==================================================== */
+/* 💻📱 تلوين الأكواد البرمجية (للاب توب والموبايل معاً - قوة قصوى) */
+/* ==================================================== */
+
+/* 🌞 الوضع النهاري */
+html body.theme-light .markdown-rendered pre[class*="language-"] code,
+html body.theme-light .markdown-rendered pre[class*="language-"] code *,
+html body.theme-light .cm-line.HyperMD-codeblock,
+html body.theme-light .cm-line.HyperMD-codeblock * {
+    color: #000000 !important;
+}
+
+html body.theme-light .cm-line .tok-keyword, html body.theme-light .cm-line .tok-builtin, html body.theme-light .cm-line .tok-variableName, html body.theme-light .cm-line .tok-propertyName, html body.theme-light .cm-line .tok-definition, html body.theme-light .cm-line .tok-function, html body.theme-light .cm-line .tok-meta, html body.theme-light .cm-line .tok-atom, html body.theme-light .cm-line .tok-bool,
+html body.theme-light .markdown-rendered pre code .token.keyword, html body.theme-light .markdown-rendered pre code .token.builtin, html body.theme-light .markdown-rendered pre code .token.property, html body.theme-light .markdown-rendered pre code .token.selector, html body.theme-light .markdown-rendered pre code .token.function, html body.theme-light .markdown-rendered pre code .token.tag, html body.theme-light .markdown-rendered pre code .token.operator, html body.theme-light .markdown-rendered pre code .token.boolean {
+    color: #15538C !important;
+}
+
+html body.theme-light .cm-line .tok-string, html body.theme-light .cm-line .tok-string2,
+html body.theme-light .markdown-rendered pre code .token.string, html body.theme-light .markdown-rendered pre code .token.attr-value {
+    color: #900C3F !important;
+}
+
+html body.theme-light .cm-line .tok-number, html body.theme-light .cm-line .tok-comment,
+html body.theme-light .markdown-rendered pre code .token.number, html body.theme-light .markdown-rendered pre code .token.comment {
+    color: #1E7A32 !important;
+}
+
+/* 🌙 الوضع الليلي */
+html body.theme-dark .markdown-rendered pre[class*="language-"] code,
+html body.theme-dark .markdown-rendered pre[class*="language-"] code *,
+html body.theme-dark .cm-line.HyperMD-codeblock,
+html body.theme-dark .cm-line.HyperMD-codeblock * {
+    color: #FFFFFF !important;
+}
+
+html body.theme-dark .cm-line .tok-keyword, html body.theme-dark .cm-line .tok-builtin, html body.theme-dark .cm-line .tok-variableName, html body.theme-dark .cm-line .tok-propertyName, html body.theme-dark .cm-line .tok-definition, html body.theme-dark .cm-line .tok-function, html body.theme-dark .cm-line .tok-meta, html body.theme-dark .cm-line .tok-atom, html body.theme-dark .cm-line .tok-bool,
+html body.theme-dark .markdown-rendered pre code .token.keyword, html body.theme-dark .markdown-rendered pre code .token.builtin, html body.theme-dark .markdown-rendered pre code .token.property, html body.theme-dark .markdown-rendered pre code .token.selector, html body.theme-dark .markdown-rendered pre code .token.function, html body.theme-dark .markdown-rendered pre code .token.tag, html body.theme-dark .markdown-rendered pre code .token.operator, html body.theme-dark .markdown-rendered pre code .token.boolean {
+    color: #4ba9f6 !important;
+}
+
+html body.theme-dark .cm-line .tok-string, html body.theme-dark .cm-line .tok-string2,
+html body.theme-dark .markdown-rendered pre code .token.string, html body.theme-dark .markdown-rendered pre code .token.attr-value {
+    color: #FF5252 !important;
+}
+
+html body.theme-dark .cm-line .tok-number, html body.theme-dark .cm-line .tok-comment,
+html body.theme-dark .markdown-rendered pre code .token.number, html body.theme-dark .markdown-rendered pre code .token.comment {
+    color: #66BB6A !important;
+}
