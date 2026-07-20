@@ -55,7 +55,7 @@ I have organized the modifications into modular files so you can easily understa
 Before installing this in your personal vault, make sure you have:
 1. The **AnuPpuccin** theme installed and applied in Obsidian.
 2. The **Style Settings** plugin installed from the Obsidian Community Plugins.
-
+3. snippets folder
 ---
 
 ## 🚀 Installation Guide
@@ -75,13 +75,13 @@ To get the exact colors and layout shown in the screenshots, you need to import 
 2. Open Obsidian and go to **Settings > Appearance**.
 3. Scroll down to **CSS Snippets** and click the folder icon to open `.obsidian/snippets/`.
 4. Move the downloaded `.css` files into this folder.
-5. Refresh the list in Obsidian and toggle them **ON**.
+5. Refresh the list in Obsidian and toggle all them **ON**.
 
 **📱 On Mobile (Android & iOS):**
 1. Download the `.css` files to your device.
 2. Navigate to your vault folder: `.obsidian/snippets/`. *(Create the `snippets` folder if it doesn't exist. On iOS, you may need to use the native Files app or a third-party app to view hidden folders).*
 3. Paste the `.css` files there.
-4. Open the Obsidian app > Settings > Appearance > Toggle the snippets **ON**.
+4. Open the Obsidian app > Settings > Appearance > Toggle All the snippets **ON**.
 
 ---
 
