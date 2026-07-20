@@ -1,186 +1,188 @@
 # AnuPpuccin Premium Mod: Distraction-Free & AMOLED Dark 🎨✨
 
-![Main Preview](screen/D1.png)
+![Main Preview](Screen/D1.png)
 
-Welcome to the **AnuPpuccin Premium Mod**! 
-While the original [AnuPpuccin theme](https://github.com/AnubisNekhet/AnuPpuccin) is an absolute masterpiece, I created this modification snippet to push it toward a more highly-focused, premium, and distraction-free workflow. 
+Welcome to **AnuPpuccin Premium Mod**! 
 
-My goal is simple: to create the ultimate reading and studying environment for students, kids, and researchers, helping future generations focus solely on their knowledge without visual clutter.
+The original [AnuPpuccin theme](https://github.com/AnubisNekhet/AnuPpuccin) is amazing, but I wanted something more focused and clean. So I built this modification to create a premium, distraction-free workspace.
+
+**My goal?** Build the perfect reading and studying environment for students, researchers, and anyone who wants to focus on what matters—without visual clutter.
 
 ---
 
-## 📊 Development Status & Focus
+## 📊 Current Status
 
-**Built for personal use, shared with the world.** 
-I initially built this mod purely for my personal workflow. Because of my preferences, the development and continuous improvements are **heavily focused on the Dark Mode**. 
+**Built for myself, shared with everyone.** 
 
-Both modes are highly functional, but here is the exact current completion status:
+I made this for my own workflow, and I use **Dark Mode** exclusively. That's why Dark Mode gets most of my attention. Both modes work great, but here's where they stand:
 
 | Theme Mode | Completion | Status |
 | :--- | :--- | :--- |
-| ☀️ **Light Mode** | **95%** | Almost perfect, minor UI refinements remaining. |
-| 🌙 **Dark Mode** | **85%** | Highly functional, ongoing development to reach perfection. |
+| ☀️ **Light Mode** | **95%** | Nearly perfect, just tiny tweaks left |
+|  **Dark Mode** | **85%** | Works great, actively improving it |
 
-*Note: Work is actively ongoing to hit 100% for both modes!*
+*Still working toward 100% on both!*
 
 ---
 
-## ⚠️ Compatibility & Testing Warning
+## ⚠️ What's Tested (And What's Not)
 
-This theme has been rigorously tested and optimized on the following operating systems:
+**Tested & Working:**
 *   🐧 **Fedora (Linux)**
 *   🪟 **Windows**
 *   🤖 **Android**
 
-**Untested Platforms:** macOS and iOS (iPhone/iPad). 
-Because Obsidian uses universal CSS rendering, the theme is expected to work **80% to 97% flawlessly** on Apple devices as well, but I haven't personally verified it. 
+**Not Tested Yet:** macOS and iOS (iPhone/iPad)
 
-*Go ahead and try it out—you have absolutely nothing to lose!*
+Since Obsidian uses standard CSS, it should work **80-97% perfectly** on Apple devices too—I just haven't tested it myself. 
 
----
-
-## 🎯 Try It Instantly! (The Preview Vault)
-
-Don't want to mess with your own vault's settings just yet? No problem! 
-I have included a ready-to-use demo vault in this repository so you can test the theme immediately.
-
-1. Download or clone this repository to your device.
-2. Open Obsidian and select **Open folder as vault**.
-3. Choose the `preview` folder included in this repo.
-4. Enjoy exploring the theme, checking the colors, and testing the layouts right away!
+*Worth trying! You've got nothing to lose.*
 
 ---
 
-## 🌟 What Makes This Mod Different? (Comparison)
+## 🎯 Quick Test (No Setup Required)
 
-If you love AnuPpuccin but want something cleaner, this mod is for you. Here is how it compares to the default theme:
+Don't want to touch your current vault settings? No problem!
 
-| Feature | Default AnuPpuccin | This Custom Mod |
+I included a ready-to-use demo vault so you can see the theme in action immediately:
+
+1. Download or clone this repo
+2. Open Obsidian → **Open folder as vault**
+3. Select the `preview` folder
+4. Start exploring—colors, layouts, everything!
+
+---
+
+## 🌟 How This Differs From Default AnuPpuccin
+
+Love AnuPpuccin but want it cleaner? This is for you.
+
+| Feature | Default AnuPpuccin | This Mod |
 | :--- | :--- | :--- |
-| **Dark Mode** | Dark gray / Soft dark | **True Pitch Black (`#000000`)** for OLED/AMOLED battery saving. |
-| **Workspace Borders** | Visible structural lines | **Completely Borderless**. Floating elements and clean spacing. |
-| **Mobile Toolbar** | Attached to the keyboard | **Floating Glassmorphism Capsule** (iOS-style) at the bottom. |
-| **Settings UI** | Standard Obsidian lists | **Card-based Layout** with smooth iOS-style sliding switches. |
-| **Code Blocks** | Boxy with visible lines | **Seamless & Rounded** with custom syntax highlight colors. |
-| **Headings** | Standard folding arrows | **Invisible Floating Arrows** that appear instantly on hover. |
+| **Dark Mode** | Dark gray / Soft dark | **True Black (`#000000`)** — saves battery on OLED screens |
+| **Borders** | Visible lines everywhere | **Borderless** — clean, floating elements |
+| **Mobile Toolbar** | Stuck to keyboard | **Floating glass capsule** (iOS-style) |
+| **Settings** | Plain lists | **Card layout** with smooth iOS toggles |
+| **Code Blocks** | Boxy with borders | **Seamless & rounded** with custom colors |
+| **Headings** | Always-visible arrows | **Hidden arrows** that show on hover only |
 
 ---
 
-## 📸 Theme Gallery
+## 📸 Screenshots
 
-Take a look at how the theme completely transforms your Obsidian workspace:
+See how this transforms your workspace:
 
 <div align="center">
-  <img src="screen/D2.png" width="49%">
-  <img src="screen/D3.png" width="49%">
-  <img src="screen/D4.png" width="49%">
-  <img src="screen/D5.png" width="49%">
-  <img src="screen/D6.png" width="49%">
-  <img src="screen/D7.png" width="49%">
-  <img src="screen/D8.png" width="49%">
-  <img src="screen/D9.png" width="49%">
-  <img src="screen/D10.png" width="49%">
-  <img src="screen/D11.png" width="49%">
-  <img src="screen/D12.png" width="49%">
-  <img src="screen/D13.png" width="49%">
-  <img src="screen/D14.png" width="49%">
+  <img src="Screen/D2.png" width="49%">
+  <img src="Screen/D3.png" width="49%">
+  <img src="Screen/D4.png" width="49%">
+  <img src="Screen/D5.png" width="49%">
+  <img src="Screen/D6.png" width="49%">
+  <img src="Screen/D7.png" width="49%">
+  <img src="Screen/D8.png" width="49%">
+  <img src="Screen/D9.png" width="49%">
+  <img src="Screen/D10.png" width="49%">
+  <img src="Screen/D11.png" width="49%">
+  <img src="Screen/D12.png" width="49%">
+  <img src="Screen/D13.png" width="49%">
+  <img src="Screen/D14.png" width="49%">
 </div>
 
 ---
 
-## 📦 What's Inside? (File Structure)
+## 📦 What's Inside
 
-I have organized the modifications into modular files so you can easily understand and use what you need:
+Everything is organized in separate files so you can pick what you need:
 
-*   📁 `preview/`: A fully working Obsidian demo vault to test the theme safely.
-*   📁 `snippets/`:
-    *   `anuppuccin-custom-tweaks.css`: The core engine. Contains the Pitch Black UI, heading colors, border removals, custom callouts, and mobile UI upgrades.
-    *   `code-blocks-colors.css`: Dedicated styling for syntax highlighting and seamless code block rendering.
-    *   `os-default-fonts.css`: Forces Obsidian to use your device's native system fonts and emojis for maximum performance and native feel.
-*   📄 `style-settings-export.json`: My personal configuration file for the Style Settings plugin.
-*   📁 `screen/`: Contains all the showcase screenshots.
-
----
-
-## 🛠️ Requirements (For your own Vault)
-
-Before installing this in your personal vault, make sure you have:
-1. The **AnuPpuccin** theme installed and applied in Obsidian.
-2. The **Style Settings** plugin installed from the Obsidian Community Plugins.
+*   📁 **`preview/`** — Complete demo vault to test safely
+*   📁 **`Screen/`** — All screenshots
+*    **`snippets/`** — The actual CSS modifications:
+    *   `anuppuccin-custom-tweaks.css` — Core stuff: black UI, colors, border removal, mobile improvements
+    *   `code-blocks-colors.css` — Syntax highlighting & code block styling
+    *   `os-default-fonts.css` — Uses your system fonts for better performance
+*   📄 **`style-settings-export.json`** — My exact Style Settings config
 
 ---
 
-## 🚀 Installation Guide
+## 🛠️ Before You Install
 
-### Step 1: Import the Configuration (Crucial)
-To get the exact colors and layout shown in the screenshots, you need to import my settings:
-1. Open Obsidian and ensure the **Style Settings** plugin is enabled.
-2. Open the `style-settings-export.json` file from this repository and copy all its contents.
-3. Go to **Obsidian Settings > Style Settings**.
-4. Click the **Import** button at the top.
-5. Paste the copied text and hit **Save**.
+Make sure you have:
 
-### Step 2: Install the CSS Snippets
-
-**💻 On Desktop (Windows/Mac/Linux):**
-1. Download the `.css` files from the `snippets/` folder in this repo.
-2. Open Obsidian and go to **Settings > Appearance**.
-3. Scroll down to **CSS Snippets** and click the folder icon to open `.obsidian/snippets/`.
-4. Move the downloaded `.css` files into this folder.
-5. Refresh the list in Obsidian and toggle them **ON**.
-
-**📱 On Mobile (Android & iOS):**
-1. Download the `.css` files to your device.
-2. Navigate to your vault folder: `.obsidian/snippets/`. *(Create the `snippets` folder if it doesn't exist. On iOS, you may need to use the native Files app or a third-party app to view hidden folders).*
-3. Paste the `.css` files there.
-4. Open the Obsidian app > Settings > Appearance > Toggle the snippets **ON**.
+1. **AnuPpuccin theme** installed and active in Obsidian
+2. **Style Settings plugin** installed (from Community Plugins)
 
 ---
 
-## 🐛 Known Bugs
+## 🚀 Installation
 
-As mentioned, I am building this project in my free time. I don't have the time to reach absolute perfection on my own, but I am getting there. 
+### Step 1: Import My Settings (Important!)
 
-**Here are the current known issues:**
-- [ ] **Mobile Dark Mode:** The files menu background appears transparent.
-- [ ] **Code Editor:** The Live Preview code editor styling in Dark Mode needs refinement across all versions.
-- [ ] **Mobile Tables:** The table styling in Dark Mode on mobile doesn't perfectly match the sleek desktop version.
+To get the exact look from the screenshots:
+
+1. Open Obsidian → Enable **Style Settings** plugin
+2. Open `style-settings-export.json` from this repo → Copy everything
+3. Go to **Settings → Style Settings**
+4. Click **Import** (top of page)
+5. Paste → Click **Save**
+
+### Step 2: Add CSS Snippets
+
+**Desktop (Windows/Mac/Linux):**
+
+1. Download `.css` files from `snippets/` folder
+2. Obsidian → **Settings → Appearance**
+3. Scroll to **CSS Snippets** → Click folder icon 📁
+4. Drop the `.css` files into that folder
+5. Go back to Obsidian → Click refresh → Toggle all snippets **ON**
+
+**📱 Mobile (Android & iOS):**
+
+1. Download `.css` files to your phone
+2. Go to your vault → `.obsidian/snippets/` - hidden folders
+   *   *Create `snippets` folder if missing*
+   *   *iOS: Use Files app or a file manager to see hidden folders*
+3. Paste `.css` files there
+4. Obsidian app → **Settings → Appearance** → Turn snippets **ON**
 
 ---
 
-## 🤝 Contributing
+## 🐛 Known Issues
 
-This is an open-source project powered by the community. Contributions are highly welcome for:
+Building this in my free time, so perfection takes time. Here's what still needs work:
 
-*   New CSS features and UI tweaks
-*   Better mobile and tablet workflows
-*   Documentation improvements
-*   Bug fixes (especially the ones listed above!)
-*   Performance and cross-device optimizations
+- [ ] **Mobile Dark Mode:** Files menu background is transparent
+- [ ] **Code Editor:** Live Preview styling in Dark Mode needs polish
+- [ ] **Mobile Tables:** Don't look as clean as desktop version yet
 
-Feel free to open an Issue or submit a Pull Request. Let's collaborate to make this the perfect study environment for everyone!
+---
+
+## 🤝 Want to Help?
+
+This is community-powered. All contributions welcome:
+
+*   New CSS features or UI improvements
+*   Better mobile/tablet support
+*   Documentation fixes
+*   Bug fixes (especially the ones above!)
+*   Performance tweaks
+
+Open an issue or submit a PR. Let's build the perfect study tool together!
 
 ---
 
 ## 📜 License
 
-This project is released under the **MIT License**.
+**MIT License** — do whatever you want with it.
 
-You are free to:
-*   Use
-*   Modify
-*   Distribute
-*   Fork
+Use it, modify it, share it, fork it — personal or commercial, no restrictions.
 
-...for both personal and commercial projects. 
-
-*(Disclaimer: This is a CSS modification snippet and is not affiliated with the official AnuPpuccin theme creators. Full credit goes to [AnubisNekhet](https://github.com/AnubisNekhet) for the amazing foundational theme!)*
+*(Note: This is a CSS mod, not official AnuPpuccin. Huge thanks to [AnubisNekhet](https://github.com/AnubisNekhet) for the base theme!)*
 
 ---
 
-## 💖 Support
+## 💖 Support the Project
 
-If you find this project useful, consider supporting its development. Every contribution helps improve features, maintain the project, and keep it accessible for everyone. 🌍✨
+If this helps you, consider supporting development. Every bit helps keep this free and improving. 🌍✨
 
 <p align="left">
   <a href="https://www.buymeacoffee.com/mohsenofficial" target="_blank">
@@ -190,9 +192,10 @@ If you find this project useful, consider supporting its development. Every cont
 
 ---
 
-### Final Thoughts 💭
-Built for my own needs, shared for the community. If it happens to help someone else, then it has done more than I originally intended. 
+### Final Words 💭
 
-Built with passion, curiosity, countless hours of learning, and a deep love for open-source software. 
+I built this for myself. If it helps you too, that's even better.
 
-Thank you for using this project and being part of its journey. 🤟🏼😘
+Made with curiosity, late-night coding sessions, and love for open-source.
+
+Thanks for using it and being part of this journey. 🤟😘
