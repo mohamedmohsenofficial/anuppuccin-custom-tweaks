@@ -49,7 +49,7 @@ I included a ready-to-use demo vault so you can see the theme in action immediat
 
 1. Download or clone this repo
 2. Open Obsidian → **Open folder as vault**
-3. Select the `preview` folder
+3. Select the `preview.zip` zip file amd extract it
 4. Start exploring—colors, layouts, everything!
 
 ---
