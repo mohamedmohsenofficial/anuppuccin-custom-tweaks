@@ -1,6 +1,7 @@
-# AnuPpuccin Premium Mod: Distraction-Free & AMOLED Dark 🎨✨
+# AnuPpuccin Premium Mod 🎨✨
 
 ![Main Preview](Screen/D1.png)
+![Main Preview](Screen/D2.png)
 
 Welcome to **AnuPpuccin Premium Mod**! 
 
@@ -73,7 +74,6 @@ Love AnuPpuccin but want it cleaner? This is for you.
 See how this transforms your workspace:
 
 <div align="center">
-  <img src="Screen/D2.png" width="49%">
   <img src="Screen/D3.png" width="49%">
   <img src="Screen/D4.png" width="49%">
   <img src="Screen/D5.png" width="49%">
