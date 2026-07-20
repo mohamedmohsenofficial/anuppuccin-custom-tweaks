@@ -1,8 +1,8 @@
 /* ==================================================== */
-/* 💻📱 تلوين الأكواد البرمجية (للاب توب والموبايل معاً - قوة قصوى) */
+/* 💻📱 Code Syntax Highlighting (For both Laptop and Mobile - Maximum Priority) */
 /* ==================================================== */
 
-/* 🌞 الوضع النهاري */
+/* 🌞 Light Mode */
 html body.theme-light .markdown-rendered pre[class*="language-"] code,
 html body.theme-light .markdown-rendered pre[class*="language-"] code *,
 html body.theme-light .cm-line.HyperMD-codeblock,
@@ -25,7 +25,7 @@ html body.theme-light .markdown-rendered pre code .token.number, html body.theme
     color: #1E7A32 !important;
 }
 
-/* 🌙 الوضع الليلي */
+/* 🌙 Dark Mode */
 html body.theme-dark .markdown-rendered pre[class*="language-"] code,
 html body.theme-dark .markdown-rendered pre[class*="language-"] code *,
 html body.theme-dark .cm-line.HyperMD-codeblock,
