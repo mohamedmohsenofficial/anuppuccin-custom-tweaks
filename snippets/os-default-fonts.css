@@ -1,18 +1,18 @@
 /* ==================================================== */
-/* 🥳 إجبار أوبسيديان على قراءة خط الإيموجي المخصص للنظام */
+/* 🥳 Forcing Obsidian to use the system's custom emoji font */
 /* ==================================================== */
 
 body {
-    /* إضافة الكلمة السحرية 'emoji' عشان تسحب الخط المعدل من الـ System مباشرة */
+    /* Adding the magic 'emoji' keyword to pull the modified font directly from the system */
     --font-text-override: system-ui, emoji, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Android Emoji", sans-serif !important;
     
-    /* إجبار البرنامج يعتمد الرصة دي في كل مكان */
+    /* Forcing the app to rely on this stack everywhere */
     --font-text: var(--font-text-override) !important;
     --font-editor: var(--font-text-override) !important;
     --font-default: var(--font-text-override) !important;
 }
 
-/* تأكيد التطبيق على المحرر ووضع القراءة */
+/* Enforcing this on both the editor and reading view */
 .markdown-rendered,
 .markdown-source-view.mod-cm6 .cm-scroller {
     font-family: var(--font-text-override) !important;
