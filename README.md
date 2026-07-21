@@ -11,7 +11,7 @@ The original [AnuPpuccin theme](https://github.com/AnubisNekhet/AnuPpuccin) is a
 
 ---
 
-## 📊 Current Status
+## Current Status
 
 **Built for myself, shared with everyone.** 
 
@@ -19,19 +19,19 @@ I made this for my own workflow, and I use **Dark Mode** exclusively. That's why
 
 | Theme Mode | Completion | Status |
 | :--- | :--- | :--- |
-| ☀️ **Light Mode** | **95%** | Nearly perfect, just tiny tweaks left |
+|  **Light Mode** | **95%** | Nearly perfect, just tiny tweaks left |
 |  **Dark Mode** | **85%** | Works great, actively improving it |
 
 *Still working toward 100% on both!*
 
 ---
 
-## ⚠️ What's Tested (And What's Not)
+## What's Tested (And What's Not)
 
 **Tested & Working:**
-*   🐧 **Fedora (Linux)**
-*   🪟 **Windows**
-*   🤖 **Android**
+*   **Fedora (Linux)**
+*   **Windows**
+*   **Android**
 
 **Not Tested Yet:** macOS and iOS (iPhone/iPad)
 
@@ -41,7 +41,7 @@ Since Obsidian uses standard CSS, it should work **80-97% perfectly** on Apple d
 
 ---
 
-## 🎯 Quick Test (No Setup Required)
+## Quick Test (No Setup Required)
 
 Don't want to touch your current vault settings? No problem!
 
@@ -54,7 +54,7 @@ I included a ready-to-use demo vault so you can see the theme in action immediat
 
 ---
 
-## 🌟 How This Differs From Default AnuPpuccin
+## How This Differs From Default AnuPpuccin
 
 Love AnuPpuccin but want it cleaner? This is for you.
 
@@ -69,7 +69,7 @@ Love AnuPpuccin but want it cleaner? This is for you.
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 See how this transforms your workspace:
 
@@ -90,7 +90,7 @@ See how this transforms your workspace:
 
 ---
 
-## 📦 What's Inside
+## What's Inside
 
 Everything is organized in separate files so you can pick what you need:
 
@@ -104,7 +104,7 @@ Everything is organized in separate files so you can pick what you need:
 
 ---
 
-## 🛠️ Before You Install
+## Before You Install
 
 Make sure you have:
 
@@ -113,7 +113,7 @@ Make sure you have:
 
 ---
 
-## 🚀 Installation
+## Installation
 
 ### Step 1: Import My Settings (Important!)
 
@@ -135,7 +135,7 @@ To get the exact look from the screenshots:
 4. Drop the `.css` files into that folder
 5. Go back to Obsidian → Click refresh → Toggle all snippets **ON**
 
-**📱 Mobile (Android & iOS):**
+** Mobile (Android & iOS):**
 
 1. Download `.css` files to your phone
 2. Go to your vault → `.obsidian/snippets/` - hidden folders
@@ -146,7 +146,7 @@ To get the exact look from the screenshots:
 
 ---
 
-## 🐛 Known Issues
+## Known Issues
 
 Building this in my free time, so perfection takes time. Here's what still needs work:
 
@@ -170,7 +170,7 @@ Open an issue or submit a PR. Let's build the perfect study tool together!
 
 ---
 
-## 📜 License
+## License
 
 **MIT License** — do whatever you want with it.
 
