@@ -1,4 +1,4 @@
-# AnuPpuccin Premium Mod 🎨✨
+# AnuPpuccin Premium
 
 ![Main Preview](Screen/D1.png)
 ![Main Preview](Screen/D2.png)
@@ -26,7 +26,7 @@ I made this for my own workflow, and I use **Dark Mode** exclusively. That's why
 
 ---
 
-## What's Tested (And What's Not)
+## What's Tested - And What's Not
 
 **Tested & Working:**
 *   **Fedora (Linux)**
@@ -41,7 +41,7 @@ Since Obsidian uses standard CSS, it should work **80-97% perfectly** on Apple d
 
 ---
 
-## Quick Test (No Setup Required)
+## Quick Test - No Setup Required
 
 Don't want to touch your current vault settings? No problem!
 
